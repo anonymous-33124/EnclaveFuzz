@@ -1,0 +1,7 @@
+11832
+
+44999 Enter new_thread_func
+9414 Enter t_sgxssl_call_apis
+
+27861 Try fuzz_new_thread_func
+9414 Try fuzz_t_sgxssl_call_apis

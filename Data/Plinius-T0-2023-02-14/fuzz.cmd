@@ -1,0 +1,1 @@
+./plinius --cb_enclave=enclave.so ./result/seeds -print_pcs=1 -print_coverage=1 -use_value_profile=1 -artifact_prefix=./result/crashes/ -ignore_crashes=1 -fork=1 -max_len=1000000 -max_total_time=86400 --cb_max_count=4 --cb_max_size=256 --cb_max_strlen=128 --cb_ecall_queue_size=5 --cb_modify_ocall_ret_prob=0.1 --cb_modify_double_fetch_value_prob=0.1

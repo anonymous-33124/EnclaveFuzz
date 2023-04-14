@@ -1,0 +1,9 @@
+568748
+
+2984951 Enter ecall_opendb
+2320240 Enter ecall_execute_sql
+1011741 Enter ecall_closedb
+
+2984951 Try fuzz_ecall_opendb
+2320240 Try fuzz_ecall_execute_sql
+1011741 Try fuzz_ecall_closedb

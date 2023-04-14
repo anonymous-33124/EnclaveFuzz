@@ -1,0 +1,47 @@
+1812
+
+708 Enter wc_benchmark_test
+968 Enter enc_wolfSSL_Debugging_ON
+931 Enter enc_wolfSSL_Cleanup
+784 Enter enc_wolfTLSv1_2_server_method
+735 Enter enc_wolfSSL_write
+682 Enter enc_wolfSSL_connect
+1083 Enter enc_wolfTLSv1_2_client_method
+759 Enter enc_wolfSSL_CTX_load_verify_buffer
+1220 Enter enc_wolfSSL_CTX_use_certificate_buffer
+866 Enter enc_wolfSSL_new
+949 Enter enc_wolfSSL_free
+942 Enter enc_wolfSSL_get_error
+1091 Enter enc_wolfSSL_Debugging_OFF
+1200 Enter enc_wolfSSL_CTX_new
+615 Enter enc_wolfSSL_CTX_use_certificate_chain_buffer_format
+438 Enter enc_wolfSSL_read
+617 Enter enc_wolfSSL_CTX_set_cipher_list
+979 Enter enc_wolfSSL_Init
+1007 Enter enc_wolfSSL_CTX_use_PrivateKey_buffer
+672 Enter enc_wolfSSL_CTX_free
+72 Enter wc_test
+584 Enter enc_wolfSSL_set_fd
+
+708 Try fuzz_wc_benchmark_test
+968 Try fuzz_enc_wolfSSL_Debugging_ON
+931 Try fuzz_enc_wolfSSL_Cleanup
+784 Try fuzz_enc_wolfTLSv1_2_server_method
+735 Try fuzz_enc_wolfSSL_write
+682 Try fuzz_enc_wolfSSL_connect
+1083 Try fuzz_enc_wolfTLSv1_2_client_method
+759 Try fuzz_enc_wolfSSL_CTX_load_verify_buffer
+1221 Try fuzz_enc_wolfSSL_CTX_use_certificate_buffer
+866 Try fuzz_enc_wolfSSL_new
+949 Try fuzz_enc_wolfSSL_free
+942 Try fuzz_enc_wolfSSL_get_error
+1091 Try fuzz_enc_wolfSSL_Debugging_OFF
+1200 Try fuzz_enc_wolfSSL_CTX_new
+615 Try fuzz_enc_wolfSSL_CTX_use_certificate_chain_buffer_format
+438 Try fuzz_enc_wolfSSL_read
+617 Try fuzz_enc_wolfSSL_CTX_set_cipher_list
+979 Try fuzz_enc_wolfSSL_Init
+1008 Try fuzz_enc_wolfSSL_CTX_use_PrivateKey_buffer
+672 Try fuzz_enc_wolfSSL_CTX_free
+72 Try fuzz_wc_test
+584 Try fuzz_enc_wolfSSL_set_fd

@@ -1,0 +1,287 @@
+{
+    "0x7ffff554e1cb": {
+        "593039a0ca905c0fdc4a48100fc0e1e60f35df6cb1366b508970ffe0ea3fe104": {
+            "[SGXSan] ERROR: Host out of bound at pc 0x7ffff554e1cb write 0x645290 with 0x4 bytes (bp = 0x7fffffffd470 sp = 0x7fffffffd458)": {
+                "num_crashes": 1,
+                "inputs": [
+                    "crash-036fe8582522c05c5201163215a317e491ae3bbc"
+                ]
+            },
+            "[SGXSan] ERROR: Host out of bound at pc 0x7ffff554e1cb write 0x5736f0 with 0x4 bytes (bp = 0x7fffffffd470 sp = 0x7fffffffd458)": {
+                "num_crashes": 1,
+                "inputs": [
+                    "crash-17352bace7a1fea0a3b54a6b9da5f457aea6ded4"
+                ]
+            },
+            "[SGXSan] ERROR: Host out of bound at pc 0x7ffff554e1cb write 0x56c200 with 0x4 bytes (bp = 0x7fffffffd470 sp = 0x7fffffffd458)": {
+                "num_crashes": 1,
+                "inputs": [
+                    "crash-1c2195820c839b818599ac02afe53040d8bbe609"
+                ]
+            },
+            "[SGXSan] ERROR: Host out of bound at pc 0x7ffff554e1cb write 0x5800a0 with 0x4 bytes (bp = 0x7fffffffd470 sp = 0x7fffffffd458)": {
+                "num_crashes": 1,
+                "inputs": [
+                    "crash-1c3ed24ea6934dbc70d41818b803377a4787421e"
+                ]
+            },
+            "[SGXSan] ERROR: Host out of bound at pc 0x7ffff554e1cb write 0x603250 with 0x4 bytes (bp = 0x7fffffffd470 sp = 0x7fffffffd458)": {
+                "num_crashes": 1,
+                "inputs": [
+                    "crash-1d834aace99da3b0c78639322415e0977803ff5e"
+                ]
+            },
+            "[SGXSan] ERROR: Host out of bound at pc 0x7ffff554e1cb write 0x579bc0 with 0x4 bytes (bp = 0x7fffffffd470 sp = 0x7fffffffd458)": {
+                "num_crashes": 1,
+                "inputs": [
+                    "crash-2f872f3923d91d7d800767617715f4c19a31cc76"
+                ]
+            },
+            "[SGXSan] ERROR: Host out of bound at pc 0x7ffff554e1cb write 0x5763a0 with 0x4 bytes (bp = 0x7fffffffd470 sp = 0x7fffffffd458)": {
+                "num_crashes": 1,
+                "inputs": [
+                    "crash-325f048a002fefd46919f2fc816f254d22d522fc"
+                ]
+            },
+            "[SGXSan] ERROR: Host out of bound at pc 0x7ffff554e1cb write 0x6260a0 with 0x4 bytes (bp = 0x7fffffffd470 sp = 0x7fffffffd458)": {
+                "num_crashes": 1,
+                "inputs": [
+                    "crash-3566149c2f054ace6e657bd4eee7b4be8c1e22ea"
+                ]
+            },
+            "[SGXSan] ERROR: Host out of bound at pc 0x7ffff554e1cb write 0x5821d0 with 0x4 bytes (bp = 0x7fffffffd470 sp = 0x7fffffffd458)": {
+                "num_crashes": 1,
+                "inputs": [
+                    "crash-35d4de1e27a55d48458a00c3e91160231c0235f8"
+                ]
+            },
+            "[SGXSan] ERROR: Host out of bound at pc 0x7ffff554e1cb write 0x5786a0 with 0x4 bytes (bp = 0x7fffffffd470 sp = 0x7fffffffd458)": {
+                "num_crashes": 1,
+                "inputs": [
+                    "crash-a56bfed420e24a7a9665bd8b40c72f8f0294f51e"
+                ]
+            },
+            "[SGXSan] ERROR: Host out of bound at pc 0x7ffff554e1cb write 0x56d570 with 0x4 bytes (bp = 0x7fffffffd470 sp = 0x7fffffffd458)": {
+                "num_crashes": 1,
+                "inputs": [
+                    "crash-ac9eef6e0bbcc5b945a61821e03844fb53230b9f"
+                ]
+            },
+            "[SGXSan] ERROR: Host out of bound at pc 0x7ffff554e1cb write 0x571690 with 0x4 bytes (bp = 0x7fffffffd470 sp = 0x7fffffffd458)": {
+                "num_crashes": 1,
+                "inputs": [
+                    "crash-b1421a95c15c263ca27ba0c1afd5000e71a1ceb9"
+                ]
+            },
+            "[SGXSan] ERROR: Host out of bound at pc 0x7ffff554e1cb write 0x571190 with 0x4 bytes (bp = 0x7fffffffd470 sp = 0x7fffffffd458)": {
+                "num_crashes": 1,
+                "inputs": [
+                    "crash-b15726c22e89f0d5156e2fc8b6ad1fecd61cfd13"
+                ]
+            },
+            "[SGXSan] ERROR: Host out of bound at pc 0x7ffff554e1cb write 0x581770 with 0x4 bytes (bp = 0x7fffffffd470 sp = 0x7fffffffd458)": {
+                "num_crashes": 1,
+                "inputs": [
+                    "crash-ba891f92db3b40f9029a762bb8fcbb6271e79405"
+                ]
+            },
+            "[SGXSan] ERROR: Host out of bound at pc 0x7ffff554e1cb write 0x577150 with 0x4 bytes (bp = 0x7fffffffd470 sp = 0x7fffffffd458)": {
+                "num_crashes": 1,
+                "inputs": [
+                    "crash-c09c909bf1dea3980a08e46994693eef70640e50"
+                ]
+            },
+            "[SGXSan] ERROR: Host out of bound at pc 0x7ffff554e1cb write 0x577640 with 0x4 bytes (bp = 0x7fffffffd470 sp = 0x7fffffffd458)": {
+                "num_crashes": 1,
+                "inputs": [
+                    "crash-ca26cc53d9c3fed454f26bdff39c6ce2c5fd4c83"
+                ]
+            },
+            "[SGXSan] ERROR: Host out of bound at pc 0x7ffff554e1cb write 0x571090 with 0x4 bytes (bp = 0x7fffffffd470 sp = 0x7fffffffd458)": {
+                "num_crashes": 1,
+                "inputs": [
+                    "crash-d67110296ef2c8bf2df0e468c97c6c3e09f78193"
+                ]
+            },
+            "[SGXSan] ERROR: Host out of bound at pc 0x7ffff554e1cb write 0x570a10 with 0x4 bytes (bp = 0x7fffffffd470 sp = 0x7fffffffd458)": {
+                "num_crashes": 1,
+                "inputs": [
+                    "crash-d8896795cc25eee0f543089274a8c14957e0aa84"
+                ]
+            },
+            "[SGXSan] ERROR: Host out of bound at pc 0x7ffff554e1cb write 0x57a190 with 0x4 bytes (bp = 0x7fffffffd470 sp = 0x7fffffffd458)": {
+                "num_crashes": 1,
+                "inputs": [
+                    "crash-db606cb3fd7bf2e374d2f8b64692b16ee89859be"
+                ]
+            },
+            "[SGXSan] ERROR: Host out of bound at pc 0x7ffff554e1cb write 0x57b390 with 0x4 bytes (bp = 0x7fffffffd470 sp = 0x7fffffffd458)": {
+                "num_crashes": 1,
+                "inputs": [
+                    "crash-469bd549b40121b65cc5e08687ab369ff59d311e"
+                ]
+            },
+            "[SGXSan] ERROR: Host out of bound at pc 0x7ffff554e1cb write 0x56f540 with 0x4 bytes (bp = 0x7fffffffd470 sp = 0x7fffffffd458)": {
+                "num_crashes": 1,
+                "inputs": [
+                    "crash-9dfd3072a5d19a2244280e996d6de25697dcb834"
+                ]
+            },
+            "[SGXSan] ERROR: Host out of bound at pc 0x7ffff554e1cb write 0x640190 with 0x4 bytes (bp = 0x7fffffffd470 sp = 0x7fffffffd458)": {
+                "num_crashes": 1,
+                "inputs": [
+                    "crash-db637a5e4002ebddb4342188b93ef9e1eda4c80b"
+                ]
+            },
+            "[SGXSan] ERROR: Host out of bound at pc 0x7ffff554e1cb write 0x571990 with 0x4 bytes (bp = 0x7fffffffd470 sp = 0x7fffffffd458)": {
+                "num_crashes": 1,
+                "inputs": [
+                    "crash-df5e0537905d403a4a4c1ea75d42107806972387"
+                ]
+            },
+            "[SGXSan] ERROR: Host out of bound at pc 0x7ffff554e1cb write 0x572eb0 with 0x4 bytes (bp = 0x7fffffffd470 sp = 0x7fffffffd458)": {
+                "num_crashes": 1,
+                "inputs": [
+                    "crash-ec6e394fc923303935da087043537c2e3a019688"
+                ]
+            },
+            "[SGXSan] ERROR: Host out of bound at pc 0x7ffff554e1cb write 0x580460 with 0x4 bytes (bp = 0x7fffffffd470 sp = 0x7fffffffd458)": {
+                "num_crashes": 1,
+                "inputs": [
+                    "crash-f3401630a4d38f79ff5e39442073f92ad10214ab"
+                ]
+            },
+            "[SGXSan] ERROR: Host out of bound at pc 0x7ffff554e1cb write 0x588ba0 with 0x4 bytes (bp = 0x7fffffffd470 sp = 0x7fffffffd458)": {
+                "num_crashes": 1,
+                "inputs": [
+                    "crash-f3cb4fb6127808764146c2339662162ae7dc83ad"
+                ]
+            },
+            "[SGXSan] ERROR: Host out of bound at pc 0x7ffff554e1cb write 0x615860 with 0x4 bytes (bp = 0x7fffffffd470 sp = 0x7fffffffd458)": {
+                "num_crashes": 1,
+                "inputs": [
+                    "crash-f3e8dde09dd6027d4c03f4db73299ccdc86bf0ad"
+                ]
+            },
+            "[SGXSan] ERROR: Host out of bound at pc 0x7ffff554e1cb write 0x56f890 with 0x4 bytes (bp = 0x7fffffffd470 sp = 0x7fffffffd458)": {
+                "num_crashes": 1,
+                "inputs": [
+                    "crash-f4d5e1ea9326d25b4b365cd1a54051db9cedc799"
+                ]
+            },
+            "[SGXSan] ERROR: Host out of bound at pc 0x7ffff554e1cb write 0x56f5f0 with 0x4 bytes (bp = 0x7fffffffd470 sp = 0x7fffffffd458)": {
+                "num_crashes": 1,
+                "inputs": [
+                    "crash-f9696c88adbedc8439869d0efff16b033c458dfd"
+                ]
+            },
+            "[SGXSan] ERROR: Host out of bound at pc 0x7ffff554e1cb write 0x574fc0 with 0x4 bytes (bp = 0x7fffffffd470 sp = 0x7fffffffd458)": {
+                "num_crashes": 1,
+                "inputs": [
+                    "crash-fc992cb270efc3641c96b6ce32b976f363d71833"
+                ]
+            },
+            "[SGXSan] ERROR: Host out of bound at pc 0x7ffff554e1cb write 0x571420 with 0x4 bytes (bp = 0x7fffffffd470 sp = 0x7fffffffd458)": {
+                "num_crashes": 1,
+                "inputs": [
+                    "crash-5275418127c4352432b87dfee579a89f74ef5892"
+                ]
+            },
+            "[SGXSan] ERROR: Host out of bound at pc 0x7ffff554e1cb write 0x56e520 with 0x4 bytes (bp = 0x7fffffffd470 sp = 0x7fffffffd458)": {
+                "num_crashes": 1,
+                "inputs": [
+                    "crash-56b36fd9bfd69345ed34a1bc10f44d929d6f66e1"
+                ]
+            },
+            "[SGXSan] ERROR: Host out of bound at pc 0x7ffff554e1cb write 0x56ccb0 with 0x4 bytes (bp = 0x7fffffffd470 sp = 0x7fffffffd458)": {
+                "num_crashes": 1,
+                "inputs": [
+                    "crash-5f90873e63b11e5cadcbd70d852be955e56415f2"
+                ]
+            },
+            "[SGXSan] ERROR: Host out of bound at pc 0x7ffff554e1cb write 0x627e40 with 0x4 bytes (bp = 0x7fffffffd470 sp = 0x7fffffffd458)": {
+                "num_crashes": 1,
+                "inputs": [
+                    "crash-657a43b6de45693f54706d2b7d59e6bd32ac07d8"
+                ]
+            },
+            "[SGXSan] ERROR: Host out of bound at pc 0x7ffff554e1cb write 0x578eb0 with 0x4 bytes (bp = 0x7fffffffd470 sp = 0x7fffffffd458)": {
+                "num_crashes": 1,
+                "inputs": [
+                    "crash-65f3cd6220649e3c1236c861cd269ba95e886f9d"
+                ]
+            },
+            "[SGXSan] ERROR: Host out of bound at pc 0x7ffff554e1cb write 0x577f50 with 0x4 bytes (bp = 0x7fffffffd470 sp = 0x7fffffffd458)": {
+                "num_crashes": 1,
+                "inputs": [
+                    "crash-791879fd10cef3029e71514eee99be52816335d6"
+                ]
+            },
+            "[SGXSan] ERROR: Host out of bound at pc 0x7ffff554e1cb write 0x57b3e0 with 0x4 bytes (bp = 0x7fffffffd470 sp = 0x7fffffffd458)": {
+                "num_crashes": 1,
+                "inputs": [
+                    "crash-8e5e99b875c3a98d39b62377d4111da420b70520"
+                ]
+            },
+            "[SGXSan] ERROR: Host out of bound at pc 0x7ffff554e1cb write 0x622850 with 0x4 bytes (bp = 0x7fffffffd470 sp = 0x7fffffffd458)": {
+                "num_crashes": 1,
+                "inputs": [
+                    "crash-8f64fb53be97a13fa7833bebcbfb60a7d4d5d7b3"
+                ]
+            },
+            "[SGXSan] ERROR: Host out of bound at pc 0x7ffff554e1cb write 0x5739a0 with 0x4 bytes (bp = 0x7fffffffd470 sp = 0x7fffffffd458)": {
+                "num_crashes": 1,
+                "inputs": [
+                    "crash-90ba41a65b023a9c854e635a9f91323831d670ca"
+                ]
+            },
+            "[SGXSan] ERROR: Host out of bound at pc 0x7ffff554e1cb write 0x56d950 with 0x4 bytes (bp = 0x7fffffffd470 sp = 0x7fffffffd458)": {
+                "num_crashes": 1,
+                "inputs": [
+                    "crash-922b2a516face6796e503d479cfcb685ab167a6b"
+                ]
+            },
+            "[SGXSan] ERROR: Host out of bound at pc 0x7ffff554e1cb write 0x574680 with 0x4 bytes (bp = 0x7fffffffd470 sp = 0x7fffffffd458)": {
+                "num_crashes": 1,
+                "inputs": [
+                    "crash-93dba84c0d1f78323906b5b13381bfd3c4deb246"
+                ]
+            },
+            "[SGXSan] ERROR: Host out of bound at pc 0x7ffff554e1cb write 0x5790d0 with 0x4 bytes (bp = 0x7fffffffd470 sp = 0x7fffffffd458)": {
+                "num_crashes": 1,
+                "inputs": [
+                    "crash-9b1a367d74ef3a3effa627005491ac10e5e8b783"
+                ]
+            }
+        }
+    },
+    "hash2bt": {
+        "593039a0ca905c0fdc4a48100fc0e1e60f35df6cb1366b508970ffe0ea3fe104": [
+            "0x0000000000433911: ReportGenericError at ??:?",
+            "0x0000000000430e39: __asan_store4 at ??:?",
+            "0x00000000002911ca: wolfcrypt_test at ld-temp.o:?",
+            "0x000000000011a7a7: sgx_wc_test at ld-temp.o:?",
+            "0x0000000000439e4e: sgx_ecall at ??:?",
+            "0x000000000042c41a: fuzz_wc_test at ??:?",
+            "0x000000000044bf2c: LLVMFuzzerTestOneInput at ??:?",
+            "0x0000000000472c5f: fuzzer::Fuzzer::ExecuteCallback(unsigned char const*, unsigned long) at ??:?",
+            "0x000000000045abfc: fuzzer::RunOneTest(fuzzer::Fuzzer*, char const*, unsigned long) at ??:?",
+            "0x00000000004610a6: fuzzer::FuzzerDriver(int*, char***, int (*)(unsigned char const*, unsigned long)) at ??:?",
+            "0x0000000000440652: main at ??:?",
+            "addr2line: DWARF error: section .debug_info is larger than its filesize! (0x93ef57 vs 0x530ea0)",
+            "0x0000000000024082: __libc_start_main at ??:?",
+            "0x000000000042958d: _start at ??:?",
+            ""
+        ]
+    },
+    "Unknown": {
+        "": {
+            "": {
+                "num_crashes": 1,
+                "inputs": [
+                    "crash-ba231e056ed9698e4b28251fc36f3c769cd6e0d3"
+                ]
+            }
+        }
+    }
+}

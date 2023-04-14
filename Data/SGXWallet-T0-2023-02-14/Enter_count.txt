@@ -1,0 +1,22 @@
+  0%|          | 0/29 [00:00<?, ?it/s]100%|██████████| 29/29 [00:00<00:00, 1966.67it/s]
+60 Enter trustedCreateBlsKeyV2
+107 Enter trustedCreateBlsKey
+108 Enter trustedGenerateSEK
+106 Enter trustedGetEncryptedSecretShareV2
+4 Enter trustedGetBlsPubKey
+5 Enter trustedSetSEK
+2 Enter trustedGetPublicShares
+4 Enter trustedGetEncryptedSecretShare
+2 Enter trustedEcdsaSign
+7 Enter trustedBlsSignMessage
+7 Enter trustedSetSEKBackup
+8 Enter trustedGenerateEcdsaKey
+4 Enter trustedDecryptDkgSecret
+4 Enter trustedDecryptKey
+3 Enter trustedEncryptKey
+2 Enter trustedGetPublicEcdsaKey
+2 Enter trustedDkgVerifyV2
+2 Enter trustedGenDkgSecret
+3 Enter trustedGenerateBLSKey
+2 Enter trustedEnclaveInit
+1 Enter trustedGetDecryptionShare

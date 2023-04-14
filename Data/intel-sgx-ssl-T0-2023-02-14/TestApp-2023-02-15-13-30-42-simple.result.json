@@ -1,0 +1,37 @@
+{
+    "Unknown": {
+        "450a4520bc0fef73a80352ecd084895c49a6e2f2a629fe1ad9ff11112ebf1cd6": {
+            "ERROR: libFuzzer: fuzz target exited": {
+                "num_crashes": 1524,
+                "inputs": [
+                    "crash-exit-0023f473303c01d88a6c259598205f250d04d57f"
+                ]
+            }
+        }
+    },
+    "hash2bt": {
+        "450a4520bc0fef73a80352ecd084895c49a6e2f2a629fe1ad9ff11112ebf1cd6": [
+            "0x0000000000035f3a: sgxsan_signal_safe_dump_bt (offset 0x35f20) at /media/leone/Data/intel-sgx-ssl-T0-2023-02-14/TestApp",
+            "0x0000000000048c85: _ZN6fuzzer15PrintStackTraceEv (offset 0x48c40) at /media/leone/Data/intel-sgx-ssl-T0-2023-02-14/TestApp",
+            "0x0000000000074886: _ZN6fuzzer6Fuzzer12ExitCallbackEv (offset 0x74840) at /media/leone/Data/intel-sgx-ssl-T0-2023-02-14/TestApp",
+            "0x00000000000468a7: ? at /lib/x86_64-linux-gnu/libc.so.6",
+            "0x0000000000046a60: on_exit (offset 0x46a60) at /lib/x86_64-linux-gnu/libc.so.6",
+            "0x000000000002fda2: ? at /media/leone/Data/intel-sgx-ssl-T0-2023-02-14/TestApp",
+            "0x000000000002f757: ? at /media/leone/Data/intel-sgx-ssl-T0-2023-02-14/TestApp",
+            "0x000000000003d303: sgx_ocall (offset 0x3d0c0) at /media/leone/Data/intel-sgx-ssl-T0-2023-02-14/TestApp",
+            "0x000000000054ef1b: ? at /media/leone/Data/intel-sgx-ssl-T0-2023-02-14/TestEnclave.signed.so",
+            "0x0000000000552fee: ? at /media/leone/Data/intel-sgx-ssl-T0-2023-02-14/TestEnclave.signed.so",
+            "0x000000000054f5db: ? at /media/leone/Data/intel-sgx-ssl-T0-2023-02-14/TestEnclave.signed.so",
+            "0x000000000054f224: ? at /media/leone/Data/intel-sgx-ssl-T0-2023-02-14/TestEnclave.signed.so",
+            "0x000000000003cf9f: sgx_ecall_switchless (offset 0x3ce40) at /media/leone/Data/intel-sgx-ssl-T0-2023-02-14/TestApp",
+            "0x000000000004f07d: LLVMFuzzerTestOneInput (offset 0x4ed30) at /media/leone/Data/intel-sgx-ssl-T0-2023-02-14/TestApp",
+            "0x0000000000075db0: _ZN6fuzzer6Fuzzer15ExecuteCallbackEPKhm (offset 0x75c90) at /media/leone/Data/intel-sgx-ssl-T0-2023-02-14/TestApp",
+            "0x000000000005dd4d: _ZN6fuzzer10RunOneTestEPNS_6FuzzerEPKcm (offset 0x5dc50) at /media/leone/Data/intel-sgx-ssl-T0-2023-02-14/TestApp",
+            "0x00000000000641f7: _ZN6fuzzer12FuzzerDriverEPiPPPcPFiPKhmE (offset 0x61b90) at /media/leone/Data/intel-sgx-ssl-T0-2023-02-14/TestApp",
+            "0x00000000000437a3: main (offset 0x43780) at /media/leone/Data/intel-sgx-ssl-T0-2023-02-14/TestApp",
+            "0x0000000000024083: __libc_start_main (offset 0x23f90) at /lib/x86_64-linux-gnu/libc.so.6",
+            "0x000000000002f60e: _start (offset 0x2f5e0) at /media/leone/Data/intel-sgx-ssl-T0-2023-02-14/TestApp",
+            ""
+        ]
+    }
+}

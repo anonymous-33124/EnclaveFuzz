@@ -1,0 +1,154 @@
+➜  /media/xxxxx/Data/mbedtls-SGX-T0-2023-02-14 ./Fuzz_mbedtls-SGX --cb_enclave=enclave.signed.so -ignore_crashes=1 --cb_zoom_rate=5 ./result/crashes/crash-019c618579b1ccbc51e788480728241036ca6a7d
+[CEnclavePool /home/xxxxx/Documents/SGXSan3/linux-sgx/psw/urts/enclave.cpp:638] enter CEnclavePool constructor
+[2023-04-12 13:15:24.247] [Init] Num of ECall: 6
+[2023-04-12 13:15:24.247] ECalls:
+  0 - fuzz_dummy
+  1 - fuzz_sgx_accept
+  2 - fuzz_sgx_connect
+  3 - fuzz_ssl_conn_handle
+  4 - fuzz_ssl_conn_init
+  5 - fuzz_ssl_conn_teardown
+
+INFO: found LLVMFuzzerCustomMutator (0x44a3b0). Disabling -len_control by default.
+INFO: libFuzzer ignores flags that start with '--'
+INFO: Running with entropic power schedule (0xFF, 100).
+INFO: Seed: 1293904009
+INFO: Loaded 1 modules   (232 inline 8-bit counters): 232 [0x4b53f8, 0x4b54e0), 
+INFO: Loaded 1 PC tables (232 PCs): 232 [0x4b54e0,0x4b6360), 
+./Fuzz_mbedtls-SGX: Running 1 inputs 1 time(s) each.
+Running: ./result/crashes/crash-019c618579b1ccbc51e788480728241036ca6a7d
+[2023-04-12 13:15:24.256] Start LLVMFuzzerTestOneInput
+[SGXSan] ALWAYS: Enclave __sanitizer_cov_8bit_counters_init, 13793 inline 8-bit counts [0x7ff86228f690, 0x7ff862292c71)
+[SGXSan] ALWAYS: Enclave __sanitizer_cov_pcs_init, 13793 PCs [0x7ff862292c78, 0x7ff8622c8a88)
+[2023-04-12 13:15:24.257] Try fuzz_ssl_conn_init
+[SGXSan] ALWAYS: Enter ssl_conn_init
+
+  . Loading the server cert. and key... ok
+  . Seeding the random number generator... ok
+  . Setting up the SSL data.... ok
+[2023-04-12 13:15:24.276] Try fuzz_ssl_conn_handle
+[SGXSan] ALWAYS: Enter ssl_conn_handle
+  [ #5642918569373877660 ]  Setting up SSL/TLS data
+client_fd is -1661644302
+  [ #5642918569373877660 ]  Performing the SSL/TLS handshake
+  [ #5642918569373877660 ]  failed: mbedtls_ssl_handshake returned -0x0045
+  [ #5642918569373877660 ]  Last error was: -0x0045 - UNKNOWN ERROR CODE (0045)
+
+[2023-04-12 13:15:24.277] Try fuzz_sgx_connect
+[SGXSan] ALWAYS: Enter sgx_connect
+[CRIT] ssl_client:549:  mbedtls_net_connect returned -0x998a6a68
+[CRIT] ssl_client:1137: Last error was: -0x998A6A68 - UNKNOWN ERROR CODE (9580) : UNKNOWN ERROR CODE (66750018)
+
+
+[2023-04-12 13:15:24.657] Try fuzz_ssl_conn_teardown
+[SGXSan] ALWAYS: Enter ssl_conn_teardown
+[2023-04-12 13:15:24.657] Try fuzz_sgx_connect
+[SGXSan] ALWAYS: Enter sgx_connect
+[CRIT] ssl_client:559:  net_set_(non)block() returned -0x1
+[CRIT] ssl_client:1137: Last error was: -0x1 - UNKNOWN ERROR CODE (0001)
+
+
+[2023-04-12 13:15:25.061] Try fuzz_sgx_accept
+[SGXSan] ALWAYS: Enter sgx_accept
+
+  . Seeding the random number generator... ok
+  . Loading the CA root certificate ... ok (0 skipped)
+[CRIT] ssl_server:1481: loading RSA certs
+ ok
+  . Bind on tcp://127.0.0.1:4433/ ... failed
+  ! mbedtls_net_bind returned -0x2bff2c5d
+
+Last error was: -0x2BFF2C5D - UNKNOWN ERROR CODE (2C00) : UNKNOWN ERROR CODE (2BFF005D)
+
+  . Cleaning up... done.
+[2023-04-12 13:15:25.080] Try fuzz_ssl_conn_handle
+[SGXSan] ALWAYS: Enter ssl_conn_handle
+
+================ Error Report ================
+[SGXSan] ERROR: Enclave Use after free 0xeba208 at pc 0x7ff86211c5fd bp 0x7ffe345a07d0 sp 0x7ffe345a07a0
+
+== SGXSan Backtrace BEG ==
+0x0000000000431a0c: sgxsan_backtrace at ??:?
+0x0000000000432332: ReportUseAfterFree at ??:?
+0x00000000004321ec: ReportGenericError at ??:?
+0x0000000000430738: __asan_memcpy at ??:?
+0x00000000001785fc: TLSConnectionHandler::handle(long, thread_info_t*) at ld-temp.o:?
+0x0000000000167be2: sgx_ssl_conn_handle at ld-temp.o:?
+0x00000000004386de: sgx_ecall at ??:?
+0x000000000042aeb4: fuzz_ssl_conn_handle at ??:?
+0x000000000044a7bc: LLVMFuzzerTestOneInput at ??:?
+0x00000000004714ef: fuzzer::Fuzzer::ExecuteCallback(unsigned char const*, unsigned long) at ??:?
+0x000000000045948c: fuzzer::RunOneTest(fuzzer::Fuzzer*, char const*, unsigned long) at ??:?
+0x000000000045f936: fuzzer::FuzzerDriver(int*, char***, int (*)(unsigned char const*, unsigned long)) at ??:?
+0x000000000043eee2: main at ??:?
+addr2line: DWARF error: section .debug_info is larger than its filesize! (0x93ef57 vs 0x530ea0)
+0x0000000000024082: __libc_start_main at ??:?
+0x000000000042961d: _start at ??:?
+== SGXSan Backtrace END ==
+
+Previously malloc at:
+
+== SGXSan Backtrace BEG ==
+0x000000000042c223: malloc at ??:?
+0x00000000000aab38: operator new(unsigned long) at ??:?
+0x0000000000168058: ssl_conn_init at ld-temp.o:?
+0x0000000000167d63: sgx_ssl_conn_init at ld-temp.o:?
+0x00000000004386de: sgx_ecall at ??:?
+0x000000000044a7bc: LLVMFuzzerTestOneInput at ??:?
+0x00000000004714ef: fuzzer::Fuzzer::ExecuteCallback(unsigned char const*, unsigned long) at ??:?
+0x000000000045948c: fuzzer::RunOneTest(fuzzer::Fuzzer*, char const*, unsigned long) at ??:?
+0x000000000045f936: fuzzer::FuzzerDriver(int*, char***, int (*)(unsigned char const*, unsigned long)) at ??:?
+0x000000000043eee2: main at ??:?
+addr2line: DWARF error: section .debug_info is larger than its filesize! (0x93ef57 vs 0x530ea0)
+0x0000000000024082: __libc_start_main at ??:?
+0x000000000042961d: _start at ??:?
+== SGXSan Backtrace END ==
+
+Previously free at:
+
+== SGXSan Backtrace BEG ==
+0x000000000042cc05: QuarantineCache::put(QuarantineElement) at ??:?
+0x000000000042c5b6: free at ??:?
+0x0000000000167fc3: ssl_conn_teardown at ld-temp.o:?
+0x0000000000167d03: sgx_ssl_conn_teardown at ld-temp.o:?
+0x00000000004386de: sgx_ecall at ??:?
+0x000000000044a7bc: LLVMFuzzerTestOneInput at ??:?
+0x00000000004714ef: fuzzer::Fuzzer::ExecuteCallback(unsigned char const*, unsigned long) at ??:?
+0x000000000045948c: fuzzer::RunOneTest(fuzzer::Fuzzer*, char const*, unsigned long) at ??:?
+0x000000000045f936: fuzzer::FuzzerDriver(int*, char***, int (*)(unsigned char const*, unsigned long)) at ??:?
+0x000000000043eee2: main at ??:?
+addr2line: DWARF error: section .debug_info is larger than its filesize! (0x93ef57 vs 0x530ea0)
+0x0000000000024082: __libc_start_main at ??:?
+0x000000000042961d: _start at ??:?
+== SGXSan Backtrace END ==
+Shadow bytes around the buggy address:
+  0x180001d73f0: cd cd cd cd cd cd cd cd cd cd cd cd cd cd cd cd 
+  0x180001d7400: cd cd cd cd cd cd cd cd cd cd cd cd cd cd cd cd 
+  0x180001d7410: cd cd cd cd cd cd cd cd cd cd cd cd cd cd cd cd 
+  0x180001d7420: cd cd cd cd cd cd cd cd cd cd cd cd cd cd cd cd 
+  0x180001d7430: cd cd cd cd cd cd cd cd cd cd cd cd cd cd cd cd 
+=>0x180001d7440: cd[cd]cd cd cd cd cd cd cd cd cd cd cd cd cd cd 
+  0x180001d7450: cd cd cd cd cd cd cd cd cd cd cd cd cd cd cd cd 
+  0x180001d7460: cd cd cd cd cd cd cd cd cd cd cd cd cd cd cd cd 
+  0x180001d7470: cd cd cd cd cd cd cd cd cd cd cd cd cd cd cd cd 
+  0x180001d7480: cd cd cd cd cd cd cd cd cd cd cd cd cd cd cd cd 
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07
+  SGX sensitive layout:  1X
+  SGX sensitive data:    2X
+  Data in Enclave:       4X
+  Stack left redzone:    81
+  Stack mid redzone:     82
+  Stack right redzone:   83
+  Stack after return:    85
+  Left alloca redzone:   86
+  Right alloca redzone:  87
+  Stack use after scope: 88
+  Global redzone:        89
+  Heap left redzone:     8a
+  Heap righ redzone:     8b
+  Freed Heap region:     8d
+  ASan internal:         8e
+================= Report End =================
+➜  /media/xxxxx/Data/mbedtls-SGX-T0-2023-02-14 

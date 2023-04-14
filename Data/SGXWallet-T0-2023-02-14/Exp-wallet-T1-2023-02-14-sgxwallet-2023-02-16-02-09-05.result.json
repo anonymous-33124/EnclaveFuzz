@@ -1,0 +1,62 @@
+{
+    "Unknown": {
+        "": {
+            "": {
+                "num_crashes": 16,
+                "inputs": [
+                    "crash-762f6680ef5f48c6d7077cb881d49067eae2e029",
+                    "crash-7dd0cf379cf12d43e51d9c764caf19cdf3dd549a",
+                    "crash-0adc7228184b414f4aa3b1c13d342a6b20a30fed",
+                    "crash-1f3e916db7d66230a0ac78502c073529db07dc3c",
+                    "crash-d63c25a0a7a068986475e98601d12f7782160a83",
+                    "crash-590ec4b97e66c10c9278811d10de6e1b47c341a5",
+                    "crash-da353deb078a1284d05dbc85144c2db1480f87d8",
+                    "crash-e8cac383fcd1d7312354e65403fd9928b195bf7f",
+                    "crash-5183696279bf20253d0a1467fadf780a12b19319",
+                    "crash-dce9c63ba8cfb29149f07988c8f2b23aefa07395",
+                    "crash-d9f912c466530111418f0150ed04bc8a83eb79da",
+                    "crash-66dd5e4de337366b41242f69072611420ffbd3c4",
+                    "crash-22e73a8ce1292b9c7b6c0ffd74930fcfd82af0a0",
+                    "crash-c80f6214adaa48057a373ba05245fcdb907f16f1",
+                    "crash-0253e7d5a93158d147f7f9f109556707e1afc3a8",
+                    "crash-a61ea2e5646ae67bc92adce7c55f9480472ea656"
+                ]
+            }
+        }
+    },
+    "hash2bt": {
+        "6c2d57e069630ad2e053fcb38ab834c8f360630e06944352f57e2d51c157d213": [
+            "0x000000000034f4e5: sgxsan_signal_safe_dump_bt (offset 0x34f490) at /home/zl/enclavefuzz/linux-sgx/SGX_APP/sgxwallet/SGXWallet-allcoverage-T1-2023-02-14/sgxwallet",
+            "0x000000000034f8b2: ? at /home/zl/enclavefuzz/linux-sgx/SGX_APP/sgxwallet/SGXWallet-allcoverage-T1-2023-02-14/sgxwallet",
+            "0x0000000000014420: ? at /lib/x86_64-linux-gnu/libpthread.so.0",
+            "0x00000000000816b9: ? at /home/zl/enclavefuzz/linux-sgx/SGX_APP/sgxwallet/SGXWallet-allcoverage-T1-2023-02-14/secure_enclave.signed.so",
+            "0x00000000000e6dc7: ? at /home/zl/enclavefuzz/linux-sgx/SGX_APP/sgxwallet/SGXWallet-allcoverage-T1-2023-02-14/secure_enclave.signed.so",
+            "0x00000000000de34a: ? at /home/zl/enclavefuzz/linux-sgx/SGX_APP/sgxwallet/SGXWallet-allcoverage-T1-2023-02-14/secure_enclave.signed.so",
+            "0x000000000006edd1: tsticker_ecall (offset 0x6ed40) at /home/zl/enclavefuzz/linux-sgx/SGX_APP/sgxwallet/SGXWallet-allcoverage-T1-2023-02-14/secure_enclave.signed.so",
+            "0x0000000000361ba2: sgx_ecall (offset 0x3619e0) at /home/zl/enclavefuzz/linux-sgx/SGX_APP/sgxwallet/SGXWallet-allcoverage-T1-2023-02-14/sgxwallet",
+            "0x00000000005eb961: trustedGenerateEcdsaKey (offset 0x5eb920) at /home/zl/enclavefuzz/linux-sgx/SGX_APP/sgxwallet/SGXWallet-allcoverage-T1-2023-02-14/sgxwallet",
+            "0x00000000005edb82: fuzz_trustedGenerateEcdsaKey (offset 0x5ed980) at /home/zl/enclavefuzz/linux-sgx/SGX_APP/sgxwallet/SGXWallet-allcoverage-T1-2023-02-14/sgxwallet",
+            "0x00000000008333ec: LLVMFuzzerTestOneInput (offset 0x833160) at /home/zl/enclavefuzz/linux-sgx/SGX_APP/sgxwallet/SGXWallet-allcoverage-T1-2023-02-14/sgxwallet",
+            "0x00000000007eb0fc: _ZN6fuzzer6Fuzzer15ExecuteCallbackEPKhm (offset 0x7eaf60) at /home/zl/enclavefuzz/linux-sgx/SGX_APP/sgxwallet/SGXWallet-allcoverage-T1-2023-02-14/sgxwallet",
+            "0x00000000007ce5d4: _ZN6fuzzer10RunOneTestEPNS_6FuzzerEPKcm (offset 0x7ce490) at /home/zl/enclavefuzz/linux-sgx/SGX_APP/sgxwallet/SGXWallet-allcoverage-T1-2023-02-14/sgxwallet",
+            "0x00000000007d2c9f: _ZN6fuzzer12FuzzerDriverEPiPPPcPFiPKhmE (offset 0x7d13e0) at /home/zl/enclavefuzz/linux-sgx/SGX_APP/sgxwallet/SGXWallet-allcoverage-T1-2023-02-14/sgxwallet",
+            "0x00000000007ce24a: main (offset 0x7ce220) at /home/zl/enclavefuzz/linux-sgx/SGX_APP/sgxwallet/SGXWallet-allcoverage-T1-2023-02-14/sgxwallet",
+            "0x0000000000024083: __libc_start_main (offset 0x23f90) at /lib/x86_64-linux-gnu/libc.so.6",
+            "0x0000000000342aae: _start (offset 0x342a80) at /home/zl/enclavefuzz/linux-sgx/SGX_APP/sgxwallet/SGXWallet-allcoverage-T1-2023-02-14/sgxwallet",
+            ""
+        ]
+    },
+    "0x7ffff4d376b9": {
+        "6c2d57e069630ad2e053fcb38ab834c8f360630e06944352f57e2d51c157d213": {
+            "[SGXSan] ERROR: #PF Addr 0xc at pc 0x7ffff4d376b9 => Null-Pointer Dereference": {
+                "num_crashes": 4,
+                "inputs": [
+                    "crash-b2c0b4780a8292215ec3da434eed531c23ed3a04",
+                    "crash-84151ec8e4f1aaef8b91e0e8e478279c12f9fcde",
+                    "crash-d5bce78504c67c07f1949fc218bc108cc9f78ec1",
+                    "crash-6cb0ae6862e2ef9c50b2b1934de0ae303a7f70bf"
+                ]
+            }
+        }
+    }
+}

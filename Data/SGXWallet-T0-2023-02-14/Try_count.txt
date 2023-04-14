@@ -1,0 +1,22 @@
+  0%|          | 0/29 [00:00<?, ?it/s]100%|██████████| 29/29 [00:00<00:00, 2813.60it/s]
+60 Try fuzz_trustedCreateBlsKeyV2
+107 Try fuzz_trustedCreateBlsKey
+108 Try fuzz_trustedGenerateSEK
+106 Try fuzz_trustedGetEncryptedSecretShareV2
+4 Try fuzz_trustedGetBlsPubKey
+5 Try fuzz_trustedSetSEK
+2 Try fuzz_trustedGetPublicShares
+4 Try fuzz_trustedGetEncryptedSecretShare
+2 Try fuzz_trustedEcdsaSign
+7 Try fuzz_trustedBlsSignMessage
+7 Try fuzz_trustedSetSEKBackup
+8 Try fuzz_trustedGenerateEcdsaKey
+4 Try fuzz_trustedDecryptDkgSecret
+4 Try fuzz_trustedDecryptKey
+3 Try fuzz_trustedEncryptKey
+2 Try fuzz_trustedGetPublicEcdsaKey
+2 Try fuzz_trustedDkgVerifyV2
+2 Try fuzz_trustedGenDkgSecret
+3 Try fuzz_trustedGenerateBLSKey
+2 Try fuzz_trustedEnclaveInit
+1 Try fuzz_trustedGetDecryptionShare

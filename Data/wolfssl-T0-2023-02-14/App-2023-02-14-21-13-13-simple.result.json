@@ -1,0 +1,64 @@
+{
+    "": {
+        "": {
+            "Don't care host error": {
+                "num_crashes": 42,
+                "inputs": [
+                    "crash-036fe8582522c05c5201163215a317e491ae3bbc",
+                    "crash-17352bace7a1fea0a3b54a6b9da5f457aea6ded4",
+                    "crash-1c2195820c839b818599ac02afe53040d8bbe609",
+                    "crash-1c3ed24ea6934dbc70d41818b803377a4787421e",
+                    "crash-1d834aace99da3b0c78639322415e0977803ff5e",
+                    "crash-2f872f3923d91d7d800767617715f4c19a31cc76",
+                    "crash-325f048a002fefd46919f2fc816f254d22d522fc",
+                    "crash-3566149c2f054ace6e657bd4eee7b4be8c1e22ea",
+                    "crash-35d4de1e27a55d48458a00c3e91160231c0235f8",
+                    "crash-a56bfed420e24a7a9665bd8b40c72f8f0294f51e",
+                    "crash-ac9eef6e0bbcc5b945a61821e03844fb53230b9f",
+                    "crash-b1421a95c15c263ca27ba0c1afd5000e71a1ceb9",
+                    "crash-b15726c22e89f0d5156e2fc8b6ad1fecd61cfd13",
+                    "crash-ba891f92db3b40f9029a762bb8fcbb6271e79405",
+                    "crash-c09c909bf1dea3980a08e46994693eef70640e50",
+                    "crash-ca26cc53d9c3fed454f26bdff39c6ce2c5fd4c83",
+                    "crash-d67110296ef2c8bf2df0e468c97c6c3e09f78193",
+                    "crash-d8896795cc25eee0f543089274a8c14957e0aa84",
+                    "crash-db606cb3fd7bf2e374d2f8b64692b16ee89859be",
+                    "crash-469bd549b40121b65cc5e08687ab369ff59d311e",
+                    "crash-9dfd3072a5d19a2244280e996d6de25697dcb834",
+                    "crash-db637a5e4002ebddb4342188b93ef9e1eda4c80b",
+                    "crash-df5e0537905d403a4a4c1ea75d42107806972387",
+                    "crash-ec6e394fc923303935da087043537c2e3a019688",
+                    "crash-f3401630a4d38f79ff5e39442073f92ad10214ab",
+                    "crash-f3cb4fb6127808764146c2339662162ae7dc83ad",
+                    "crash-f3e8dde09dd6027d4c03f4db73299ccdc86bf0ad",
+                    "crash-f4d5e1ea9326d25b4b365cd1a54051db9cedc799",
+                    "crash-f9696c88adbedc8439869d0efff16b033c458dfd",
+                    "crash-fc992cb270efc3641c96b6ce32b976f363d71833",
+                    "crash-5275418127c4352432b87dfee579a89f74ef5892",
+                    "crash-56b36fd9bfd69345ed34a1bc10f44d929d6f66e1",
+                    "crash-5f90873e63b11e5cadcbd70d852be955e56415f2",
+                    "crash-657a43b6de45693f54706d2b7d59e6bd32ac07d8",
+                    "crash-65f3cd6220649e3c1236c861cd269ba95e886f9d",
+                    "crash-791879fd10cef3029e71514eee99be52816335d6",
+                    "crash-8e5e99b875c3a98d39b62377d4111da420b70520",
+                    "crash-8f64fb53be97a13fa7833bebcbfb60a7d4d5d7b3",
+                    "crash-90ba41a65b023a9c854e635a9f91323831d670ca",
+                    "crash-922b2a516face6796e503d479cfcb685ab167a6b",
+                    "crash-93dba84c0d1f78323906b5b13381bfd3c4deb246",
+                    "crash-9b1a367d74ef3a3effa627005491ac10e5e8b783"
+                ]
+            }
+        }
+    },
+    "hash2bt": {},
+    "Unknown": {
+        "": {
+            "": {
+                "num_crashes": 1,
+                "inputs": [
+                    "crash-ba231e056ed9698e4b28251fc36f3c769cd6e0d3"
+                ]
+            }
+        }
+    }
+}

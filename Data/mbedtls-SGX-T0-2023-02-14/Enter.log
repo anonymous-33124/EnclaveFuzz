@@ -1,0 +1,15 @@
+75238
+
+252392 Enter sgx_accept
+194765 Enter ssl_conn_init
+260723 Enter sgx_connect
+115380 Enter ssl_conn_teardown
+145490 Enter dummy
+146128 Enter ssl_conn_handle
+
+252392 Try fuzz_sgx_accept
+194765 Try fuzz_ssl_conn_init
+260723 Try fuzz_sgx_connect
+115380 Try fuzz_ssl_conn_teardown
+145490 Try fuzz_dummy
+146128 Try fuzz_ssl_conn_handle

@@ -1,0 +1,311 @@
+[2023-02-14 10:00:26.863] [Init] Num of ECall: 22
+[2023-02-14 10:00:26.863] ECalls:
+  0 - fuzz_enc_wolfSSL_CTX_free
+  1 - fuzz_enc_wolfSSL_CTX_load_verify_buffer
+  2 - fuzz_enc_wolfSSL_CTX_new
+  3 - fuzz_enc_wolfSSL_CTX_set_cipher_list
+  4 - fuzz_enc_wolfSSL_CTX_use_PrivateKey_buffer
+  5 - fuzz_enc_wolfSSL_CTX_use_certificate_buffer
+  6 - fuzz_enc_wolfSSL_CTX_use_certificate_chain_buffer_format
+  7 - fuzz_enc_wolfSSL_Cleanup
+  8 - fuzz_enc_wolfSSL_Debugging_OFF
+  9 - fuzz_enc_wolfSSL_Debugging_ON
+  10 - fuzz_enc_wolfSSL_Init
+  11 - fuzz_enc_wolfSSL_connect
+  12 - fuzz_enc_wolfSSL_free
+  13 - fuzz_enc_wolfSSL_get_error
+  14 - fuzz_enc_wolfSSL_new
+  15 - fuzz_enc_wolfSSL_read
+  16 - fuzz_enc_wolfSSL_set_fd
+  17 - fuzz_enc_wolfSSL_write
+  18 - fuzz_enc_wolfTLSv1_2_client_method
+  19 - fuzz_enc_wolfTLSv1_2_server_method
+  20 - fuzz_wc_benchmark_test
+  21 - fuzz_wc_test
+
+INFO: found LLVMFuzzerCustomMutator (0x44bb20). Disabling -len_control by default.
+INFO: libFuzzer ignores flags that start with '--'
+INFO: Running with entropic power schedule (0xFF, 100).
+INFO: Seed: 1881440671
+INFO: Loaded 1 modules   (345 inline 8-bit counters): 345 [0x4b8748, 0x4b88a1), 
+INFO: Loaded 1 PC tables (345 PCs): 345 [0x4b88a8,0x4b9e38), 
+INFO: -fork=4: fuzzing in separate process(s)
+INFO: -fork=4: 0 seed inputs, starting to fuzz in /tmp/libFuzzerTemp.FuzzWithFork10931.dir
+#1: cov: 0 ft: 0 corp: 0 exec/s 0 oom/timeout/crash: 0/0/0 time: 23s job: 1 dft_time: 0
+#2: cov: 0 ft: 0 corp: 0 exec/s 0 oom/timeout/crash: 0/0/0 time: 24s job: 2 dft_time: 0
+#3: cov: 0 ft: 0 corp: 0 exec/s 0 oom/timeout/crash: 0/0/0 time: 24s job: 6 dft_time: 0
+[SGXSan] ERROR: Host out of bound at pc 0x7faf6a44c1cb write 0x1584160 with 0x4 bytes (bp = 0x7ffe6b8d1170 sp = 0x7ffe6b8d1158)
+#7: cov: 0 ft: 0 corp: 0 exec/s 0 oom/timeout/crash: 0/0/1 time: 24s job: 7 dft_time: 0
+[SGXSan] ERROR: Host out of bound at pc 0x7f81c88181cb write 0xfe8b60 with 0x4 bytes (bp = 0x7fff032dbc60 sp = 0x7fff032dbc48)
+#22: cov: 0 ft: 0 corp: 0 exec/s 0 oom/timeout/crash: 0/0/2 time: 53s job: 4 dft_time: 0
+[SGXSan] ERROR: Host out of bound at pc 0x7f51f13ec1cb write 0x2720220 with 0x4 bytes (bp = 0x7fff0348de80 sp = 0x7fff0348de68)
+#29: cov: 286 ft: 636 corp: 6 exec/s 0 oom/timeout/crash: 0/0/3 time: 91s job: 9 dft_time: 0
+#32: cov: 2138 ft: 7040 corp: 8 exec/s 0 oom/timeout/crash: 0/0/3 time: 144s job: 3 dft_time: 0
+#33: cov: 2176 ft: 8121 corp: 9 exec/s 0 oom/timeout/crash: 0/0/3 time: 212s job: 5 dft_time: 0
+[SGXSan] ERROR: Host out of bound at pc 0x7fbb0e0b81cb write 0x1b08420 with 0x4 bytes (bp = 0x7ffd94ebafb0 sp = 0x7ffd94ebaf98)
+#36: cov: 2176 ft: 8121 corp: 9 exec/s 0 oom/timeout/crash: 0/0/4 time: 212s job: 10 dft_time: 0
+#39: cov: 2176 ft: 8121 corp: 9 exec/s 0 oom/timeout/crash: 0/0/4 time: 242s job: 12 dft_time: 0
+#42: cov: 2176 ft: 8121 corp: 9 exec/s 0 oom/timeout/crash: 0/0/4 time: 267s job: 13 dft_time: 0
+#45: cov: 2176 ft: 8121 corp: 9 exec/s 0 oom/timeout/crash: 0/0/4 time: 302s job: 11 dft_time: 0
+#51: cov: 2176 ft: 8121 corp: 9 exec/s 0 oom/timeout/crash: 0/0/4 time: 302s job: 16 dft_time: 0
+[SGXSan] ERROR: Host out of bound at pc 0x7fab857da1cb write 0x1dd98f0 with 0x4 bytes (bp = 0x7fff064c70e0 sp = 0x7fff064c70c8)
+#54: cov: 2176 ft: 8121 corp: 9 exec/s 0 oom/timeout/crash: 0/0/5 time: 319s job: 14 dft_time: 0
+#57: cov: 2176 ft: 8121 corp: 9 exec/s 0 oom/timeout/crash: 0/0/5 time: 321s job: 15 dft_time: 0
+#60: cov: 2176 ft: 8121 corp: 9 exec/s 0 oom/timeout/crash: 0/0/5 time: 428s job: 18 dft_time: 0
+#76: cov: 2176 ft: 8121 corp: 9 exec/s 0 oom/timeout/crash: 0/0/5 time: 437s job: 17 dft_time: 0
+#79: cov: 2194 ft: 8870 corp: 12 exec/s 0 oom/timeout/crash: 0/0/5 time: 633s job: 20 dft_time: 0
+#85: cov: 2194 ft: 8870 corp: 12 exec/s 0 oom/timeout/crash: 0/0/5 time: 678s job: 21 dft_time: 0
+#88: cov: 2194 ft: 9099 corp: 13 exec/s 0 oom/timeout/crash: 0/0/5 time: 756s job: 23 dft_time: 0
+#91: cov: 2194 ft: 9099 corp: 13 exec/s 0 oom/timeout/crash: 0/0/5 time: 761s job: 22 dft_time: 0
+#94: cov: 2194 ft: 9099 corp: 13 exec/s 0 oom/timeout/crash: 0/0/5 time: 905s job: 24 dft_time: 0
+#97: cov: 2194 ft: 9099 corp: 13 exec/s 0 oom/timeout/crash: 0/0/5 time: 945s job: 26 dft_time: 0
+#100: cov: 2194 ft: 9099 corp: 13 exec/s 0 oom/timeout/crash: 0/0/5 time: 974s job: 25 dft_time: 0
+#103: cov: 2194 ft: 9099 corp: 13 exec/s 0 oom/timeout/crash: 0/0/5 time: 983s job: 27 dft_time: 0
+#106: cov: 2194 ft: 9099 corp: 13 exec/s 0 oom/timeout/crash: 0/0/5 time: 1016s job: 28 dft_time: 0
+#109: cov: 2194 ft: 9099 corp: 13 exec/s 0 oom/timeout/crash: 0/0/5 time: 1150s job: 30 dft_time: 0
+#112: cov: 2194 ft: 9099 corp: 13 exec/s 0 oom/timeout/crash: 0/0/5 time: 1188s job: 29 dft_time: 0
+#116: cov: 2194 ft: 9099 corp: 13 exec/s 0 oom/timeout/crash: 0/0/5 time: 1219s job: 32 dft_time: 0
+[SGXSan] ERROR: Host out of bound at pc 0x7f068b9ba1cb write 0xb92ad0 with 0x4 bytes (bp = 0x7ffc98818850 sp = 0x7ffc98818838)
+#117: cov: 2194 ft: 9099 corp: 13 exec/s 0 oom/timeout/crash: 0/0/6 time: 1226s job: 8 dft_time: 0
+#120: cov: 2194 ft: 9099 corp: 13 exec/s 0 oom/timeout/crash: 0/1/6 time: 1236s job: 31 dft_time: 0
+#128: cov: 2194 ft: 9099 corp: 13 exec/s 0 oom/timeout/crash: 0/1/6 time: 1324s job: 35 dft_time: 0
+#131: cov: 2227 ft: 10141 corp: 14 exec/s 0 oom/timeout/crash: 0/1/6 time: 1424s job: 33 dft_time: 0
+#134: cov: 2227 ft: 10141 corp: 14 exec/s 0 oom/timeout/crash: 0/1/6 time: 1439s job: 34 dft_time: 0
+#138: cov: 2227 ft: 10141 corp: 14 exec/s 0 oom/timeout/crash: 0/1/6 time: 1467s job: 37 dft_time: 0
+#146: cov: 2227 ft: 10141 corp: 14 exec/s 0 oom/timeout/crash: 0/1/6 time: 1523s job: 19 dft_time: 0
+#150: cov: 2227 ft: 10141 corp: 14 exec/s 0 oom/timeout/crash: 0/2/6 time: 1539s job: 38 dft_time: 0
+#154: cov: 2227 ft: 10141 corp: 14 exec/s 0 oom/timeout/crash: 0/2/6 time: 1546s job: 39 dft_time: 0
+#158: cov: 2227 ft: 10141 corp: 14 exec/s 0 oom/timeout/crash: 0/2/6 time: 1610s job: 40 dft_time: 0
+#162: cov: 2227 ft: 10141 corp: 14 exec/s 0 oom/timeout/crash: 0/2/6 time: 1700s job: 43 dft_time: 0
+#166: cov: 2227 ft: 10141 corp: 14 exec/s 0 oom/timeout/crash: 0/2/6 time: 1705s job: 41 dft_time: 0
+#170: cov: 2227 ft: 10141 corp: 14 exec/s 0 oom/timeout/crash: 0/2/6 time: 1770s job: 42 dft_time: 0
+#176: cov: 2227 ft: 10141 corp: 14 exec/s 0 oom/timeout/crash: 0/2/6 time: 1771s job: 45 dft_time: 0
+#186: cov: 2227 ft: 10415 corp: 15 exec/s 0 oom/timeout/crash: 0/2/6 time: 1800s job: 47 dft_time: 0
+[SGXSan] ERROR: Host out of bound at pc 0x7f4f09b3c1cb write 0x16ba1f0 with 0x4 bytes (bp = 0x7ffc83067bb0 sp = 0x7ffc83067b98)
+#194: cov: 2228 ft: 10459 corp: 17 exec/s 0 oom/timeout/crash: 0/2/7 time: 1800s job: 48 dft_time: 0
+[SGXSan] ERROR: Host out of bound at pc 0x7f60554da1cb write 0x13fd050 with 0x4 bytes (bp = 0x7fffa4f1e2e0 sp = 0x7fffa4f1e2c8)
+#198: cov: 2229 ft: 10479 corp: 19 exec/s 0 oom/timeout/crash: 0/2/8 time: 1851s job: 36 dft_time: 0
+#206: cov: 2229 ft: 10479 corp: 19 exec/s 0 oom/timeout/crash: 0/2/8 time: 1943s job: 49 dft_time: 0
+#210: cov: 2233 ft: 10794 corp: 22 exec/s 0 oom/timeout/crash: 0/2/8 time: 2018s job: 44 dft_time: 0
+#214: cov: 2233 ft: 10794 corp: 22 exec/s 0 oom/timeout/crash: 0/2/8 time: 2037s job: 46 dft_time: 0
+#218: cov: 2233 ft: 10794 corp: 22 exec/s 0 oom/timeout/crash: 0/2/8 time: 2067s job: 50 dft_time: 0
+#222: cov: 2233 ft: 10794 corp: 22 exec/s 0 oom/timeout/crash: 0/2/8 time: 2078s job: 52 dft_time: 0
+#226: cov: 2233 ft: 10794 corp: 22 exec/s 0 oom/timeout/crash: 0/2/8 time: 2138s job: 53 dft_time: 0
+#230: cov: 2233 ft: 10794 corp: 22 exec/s 0 oom/timeout/crash: 0/2/8 time: 2190s job: 55 dft_time: 0
+#236: cov: 2233 ft: 10794 corp: 22 exec/s 0 oom/timeout/crash: 0/2/8 time: 2190s job: 57 dft_time: 0
+[SGXSan] ERROR: Host out of bound at pc 0x7f7e48ba81cb write 0xd96490 with 0x4 bytes (bp = 0x7ffc054e9620 sp = 0x7ffc054e9608)
+#240: cov: 2234 ft: 10823 corp: 23 exec/s 0 oom/timeout/crash: 0/2/9 time: 2237s job: 51 dft_time: 0
+#245: cov: 2234 ft: 10823 corp: 23 exec/s 0 oom/timeout/crash: 0/2/9 time: 2244s job: 54 dft_time: 0
+#249: cov: 2236 ft: 10912 corp: 24 exec/s 0 oom/timeout/crash: 0/2/9 time: 2323s job: 56 dft_time: 0
+#254: cov: 2236 ft: 10912 corp: 24 exec/s 0 oom/timeout/crash: 0/2/9 time: 2349s job: 59 dft_time: 0
+#259: cov: 2236 ft: 10912 corp: 24 exec/s 0 oom/timeout/crash: 0/2/9 time: 2402s job: 58 dft_time: 0
+#282: cov: 2236 ft: 10912 corp: 24 exec/s 0 oom/timeout/crash: 0/2/9 time: 2413s job: 61 dft_time: 0
+[SGXSan] ERROR: Host out of bound at pc 0x7f49b136f1cb write 0xda4e50 with 0x4 bytes (bp = 0x7ffec02f2af0 sp = 0x7ffec02f2ad8)
+#287: cov: 2240 ft: 11175 corp: 30 exec/s 0 oom/timeout/crash: 0/2/10 time: 2465s job: 62 dft_time: 0
+#294: cov: 2240 ft: 11175 corp: 30 exec/s 0 oom/timeout/crash: 0/2/10 time: 2539s job: 64 dft_time: 0
+[SGXSan] ERROR: Host out of bound at pc 0x7fbb55ea51cb write 0x18bbad0 with 0x4 bytes (bp = 0x7ffdffbface0 sp = 0x7ffdffbfacc8)
+#299: cov: 2241 ft: 11206 corp: 31 exec/s 0 oom/timeout/crash: 0/2/11 time: 2584s job: 65 dft_time: 0
+#304: cov: 2241 ft: 11206 corp: 31 exec/s 0 oom/timeout/crash: 0/2/11 time: 2586s job: 63 dft_time: 0
+#310: cov: 2241 ft: 11206 corp: 31 exec/s 0 oom/timeout/crash: 0/2/11 time: 2595s job: 66 dft_time: 0
+[SGXSan] ERROR: Host out of bound at pc 0x7fd1b1ec31cb write 0x7ed500 with 0x4 bytes (bp = 0x7ffde95ea7e0 sp = 0x7ffde95ea7c8)
+#317: cov: 2241 ft: 11206 corp: 31 exec/s 0 oom/timeout/crash: 0/2/12 time: 2643s job: 67 dft_time: 0
+[SGXSan] ERROR: Host out of bound at pc 0x7f2da5f411cb write 0x25fed90 with 0x4 bytes (bp = 0x7ffd36906050 sp = 0x7ffd36906038)
+#322: cov: 2241 ft: 11212 corp: 32 exec/s 0 oom/timeout/crash: 0/2/13 time: 2656s job: 68 dft_time: 0
+#328: cov: 2241 ft: 11212 corp: 32 exec/s 0 oom/timeout/crash: 0/2/13 time: 2689s job: 69 dft_time: 0
+#333: cov: 2242 ft: 11271 corp: 33 exec/s 0 oom/timeout/crash: 0/2/13 time: 2830s job: 60 dft_time: 0
+#338: cov: 2242 ft: 11271 corp: 33 exec/s 0 oom/timeout/crash: 0/2/13 time: 2920s job: 72 dft_time: 0
+#343: cov: 2242 ft: 11271 corp: 33 exec/s 0 oom/timeout/crash: 0/2/13 time: 2929s job: 70 dft_time: 0
+#349: cov: 2242 ft: 11271 corp: 33 exec/s 0 oom/timeout/crash: 0/2/13 time: 2949s job: 73 dft_time: 0
+#354: cov: 2242 ft: 11484 corp: 34 exec/s 0 oom/timeout/crash: 0/2/13 time: 3023s job: 71 dft_time: 0
+#369: cov: 2242 ft: 11484 corp: 34 exec/s 0 oom/timeout/crash: 0/2/13 time: 3075s job: 76 dft_time: 0
+[SGXSan] ERROR: Host out of bound at pc 0x7f4faf9571cb write 0x144a980 with 0x4 bytes (bp = 0x7ffe5d9dbb70 sp = 0x7ffe5d9dbb58)
+#374: cov: 2242 ft: 11567 corp: 37 exec/s 0 oom/timeout/crash: 0/2/14 time: 3112s job: 74 dft_time: 0
+#380: cov: 2242 ft: 11567 corp: 37 exec/s 0 oom/timeout/crash: 0/2/14 time: 3215s job: 79 dft_time: 0
+#385: cov: 2242 ft: 11567 corp: 37 exec/s 0 oom/timeout/crash: 0/2/14 time: 3219s job: 75 dft_time: 0
+#399: cov: 2242 ft: 11567 corp: 37 exec/s 0 oom/timeout/crash: 0/2/14 time: 3267s job: 80 dft_time: 0
+[SGXSan] ERROR: Host out of bound at pc 0x7effc9aed1cb write 0x1b73030 with 0x4 bytes (bp = 0x7ffd860ffc60 sp = 0x7ffd860ffc48)
+#406: cov: 2242 ft: 11567 corp: 37 exec/s 0 oom/timeout/crash: 0/2/15 time: 3323s job: 82 dft_time: 0
+[SGXSan] ERROR: Host out of bound at pc 0x7f1b1f2ad1cb write 0xb51880 with 0x4 bytes (bp = 0x7ffe5e8164c0 sp = 0x7ffe5e8164a8)
+#419: cov: 2242 ft: 11567 corp: 37 exec/s 0 oom/timeout/crash: 0/2/16 time: 3323s job: 83 dft_time: 0
+[SGXSan] ERROR: Host out of bound at pc 0x7f4a822bc1cb write 0x7ca760 with 0x4 bytes (bp = 0x7ffda93ff010 sp = 0x7ffda93feff8)
+#431: cov: 2242 ft: 11594 corp: 38 exec/s 0 oom/timeout/crash: 0/2/17 time: 3351s job: 81 dft_time: 0
+#437: cov: 2243 ft: 11616 corp: 40 exec/s 0 oom/timeout/crash: 0/2/17 time: 4553s job: 77 dft_time: 0
+#443: cov: 2243 ft: 11616 corp: 40 exec/s 0 oom/timeout/crash: 0/2/17 time: 4553s job: 84 dft_time: 0
+#450: cov: 2243 ft: 11616 corp: 40 exec/s 0 oom/timeout/crash: 0/2/17 time: 4553s job: 78 dft_time: 0
+#458: cov: 2243 ft: 11780 corp: 41 exec/s 0 oom/timeout/crash: 0/2/17 time: 4974s job: 86 dft_time: 0
+#464: cov: 2243 ft: 12238 corp: 42 exec/s 0 oom/timeout/crash: 0/2/17 time: 5100s job: 87 dft_time: 0
+#470: cov: 2243 ft: 12238 corp: 42 exec/s 0 oom/timeout/crash: 0/2/17 time: 5100s job: 85 dft_time: 0
+#477: cov: 2243 ft: 12238 corp: 42 exec/s 0 oom/timeout/crash: 0/2/17 time: 5127s job: 89 dft_time: 0
+[SGXSan] ERROR: Host out of bound at pc 0x7fd2924ac1cb write 0xc2c440 with 0x4 bytes (bp = 0x7ffc201389b0 sp = 0x7ffc20138998)
+#483: cov: 2243 ft: 12238 corp: 42 exec/s 0 oom/timeout/crash: 0/2/18 time: 5309s job: 91 dft_time: 0
+#489: cov: 2243 ft: 12238 corp: 42 exec/s 0 oom/timeout/crash: 0/2/18 time: 5357s job: 88 dft_time: 0
+#496: cov: 2243 ft: 12238 corp: 42 exec/s 0 oom/timeout/crash: 0/2/18 time: 5390s job: 92 dft_time: 0
+[SGXSan] ERROR: Host out of bound at pc 0x7f82cd9e71cb write 0x20ba140 with 0x4 bytes (bp = 0x7ffe397fc3f0 sp = 0x7ffe397fc3d8)
+#506: cov: 2243 ft: 12238 corp: 42 exec/s 0 oom/timeout/crash: 0/2/19 time: 5390s job: 95 dft_time: 0
+[SGXSan] ERROR: Host out of bound at pc 0x7ff02babe1cb write 0xdedab0 with 0x4 bytes (bp = 0x7ffd265b21d0 sp = 0x7ffd265b21b8)
+#512: cov: 2243 ft: 12241 corp: 43 exec/s 0 oom/timeout/crash: 0/2/20 time: 5419s job: 90 dft_time: 0
+#518: cov: 2243 ft: 12241 corp: 43 exec/s 0 oom/timeout/crash: 0/2/20 time: 5614s job: 94 dft_time: 0
+#527: cov: 2243 ft: 12241 corp: 43 exec/s 0 oom/timeout/crash: 0/2/20 time: 5679s job: 98 dft_time: 0
+[SGXSan] ERROR: Host out of bound at pc 0x7f799fb781cb write 0x13a8870 with 0x4 bytes (bp = 0x7ffd8c7894f0 sp = 0x7ffd8c7894d8)
+#533: cov: 2244 ft: 12381 corp: 45 exec/s 0 oom/timeout/crash: 0/2/21 time: 6003s job: 97 dft_time: 0
+#542: cov: 2244 ft: 12381 corp: 45 exec/s 0 oom/timeout/crash: 0/2/21 time: 6046s job: 99 dft_time: 0
+[SGXSan] ERROR: Host out of bound at pc 0x7faef0fcb1cb write 0x2389000 with 0x4 bytes (bp = 0x7ffd1262e1b0 sp = 0x7ffd1262e198)
+#548: cov: 2244 ft: 12384 corp: 46 exec/s 0 oom/timeout/crash: 0/2/22 time: 6050s job: 96 dft_time: 0
+#555: cov: 2244 ft: 12384 corp: 46 exec/s 0 oom/timeout/crash: 0/2/22 time: 6133s job: 101 dft_time: 0
+[SGXSan] ERROR: Host out of bound at pc 0x7f455e7461cb write 0x189ff20 with 0x4 bytes (bp = 0x7ffe04a3ecc0 sp = 0x7ffe04a3eca8)
+#575: cov: 2244 ft: 12384 corp: 46 exec/s 0 oom/timeout/crash: 0/2/23 time: 6206s job: 102 dft_time: 0
+[SGXSan] ERROR: Host out of bound at pc 0x7fb5db3931cb write 0x1087d70 with 0x4 bytes (bp = 0x7ffdfcf8a880 sp = 0x7ffdfcf8a868)
+#583: cov: 2244 ft: 12454 corp: 50 exec/s 0 oom/timeout/crash: 0/2/24 time: 6369s job: 93 dft_time: 0
+#589: cov: 2245 ft: 13041 corp: 51 exec/s 0 oom/timeout/crash: 0/2/24 time: 6782s job: 100 dft_time: 0
+#595: cov: 2245 ft: 13041 corp: 51 exec/s 0 oom/timeout/crash: 0/2/24 time: 6782s job: 103 dft_time: 0
+#602: cov: 2245 ft: 13041 corp: 51 exec/s 0 oom/timeout/crash: 0/2/24 time: 6782s job: 104 dft_time: 0
+#609: cov: 2245 ft: 13041 corp: 51 exec/s 0 oom/timeout/crash: 0/2/24 time: 7128s job: 105 dft_time: 0
+#616: cov: 2245 ft: 13041 corp: 51 exec/s 0 oom/timeout/crash: 0/2/24 time: 7169s job: 108 dft_time: 0
+#623: cov: 2245 ft: 13041 corp: 51 exec/s 0 oom/timeout/crash: 0/2/24 time: 7393s job: 107 dft_time: 0
+#630: cov: 2245 ft: 13041 corp: 51 exec/s 0 oom/timeout/crash: 0/2/24 time: 7680s job: 111 dft_time: 0
+#637: cov: 2245 ft: 13041 corp: 51 exec/s 0 oom/timeout/crash: 0/2/24 time: 7806s job: 112 dft_time: 0
+#644: cov: 2245 ft: 13041 corp: 51 exec/s 0 oom/timeout/crash: 0/2/24 time: 7956s job: 113 dft_time: 0
+#651: cov: 2245 ft: 13041 corp: 51 exec/s 0 oom/timeout/crash: 0/2/24 time: 8051s job: 109 dft_time: 0
+#658: cov: 2245 ft: 13041 corp: 51 exec/s 0 oom/timeout/crash: 0/2/24 time: 8364s job: 114 dft_time: 0
+#663: cov: 2245 ft: 13041 corp: 51 exec/s 0 oom/timeout/crash: 0/2/24 time: 8585s job: 106 dft_time: 0
+#670: cov: 2245 ft: 13041 corp: 51 exec/s 0 oom/timeout/crash: 0/3/24 time: 8901s job: 115 dft_time: 0
+#677: cov: 2245 ft: 13041 corp: 51 exec/s 0 oom/timeout/crash: 0/3/24 time: 8934s job: 116 dft_time: 0
+#684: cov: 2245 ft: 13041 corp: 51 exec/s 0 oom/timeout/crash: 0/3/24 time: 8972s job: 110 dft_time: 0
+#691: cov: 2245 ft: 13041 corp: 51 exec/s 0 oom/timeout/crash: 0/4/24 time: 9069s job: 119 dft_time: 0
+#698: cov: 2245 ft: 13041 corp: 51 exec/s 0 oom/timeout/crash: 0/4/24 time: 9156s job: 120 dft_time: 0
+#705: cov: 2245 ft: 13041 corp: 51 exec/s 0 oom/timeout/crash: 0/4/24 time: 9224s job: 118 dft_time: 0
+#712: cov: 2245 ft: 13041 corp: 51 exec/s 0 oom/timeout/crash: 0/4/24 time: 9229s job: 117 dft_time: 0
+#719: cov: 2245 ft: 13041 corp: 51 exec/s 0 oom/timeout/crash: 0/4/24 time: 9363s job: 121 dft_time: 0
+#728: cov: 2245 ft: 13041 corp: 51 exec/s 0 oom/timeout/crash: 0/4/24 time: 9484s job: 125 dft_time: 0
+[SGXSan] ERROR: Host out of bound at pc 0x7f5ebc8971cb write 0x1f4d3b0 with 0x4 bytes (bp = 0x7ffc891ff840 sp = 0x7ffc891ff828)
+#736: cov: 2245 ft: 13044 corp: 52 exec/s 0 oom/timeout/crash: 0/4/25 time: 9723s job: 123 dft_time: 0
+#743: cov: 2245 ft: 13060 corp: 53 exec/s 0 oom/timeout/crash: 0/4/25 time: 10168s job: 126 dft_time: 0
+#750: cov: 2245 ft: 13060 corp: 53 exec/s 0 oom/timeout/crash: 0/4/25 time: 10168s job: 122 dft_time: 0
+#758: cov: 2245 ft: 13060 corp: 53 exec/s 0 oom/timeout/crash: 0/4/25 time: 10278s job: 128 dft_time: 0
+[SGXSan] ERROR: Host out of bound at pc 0x7fc4cf63d1cb write 0xecbba0 with 0x4 bytes (bp = 0x7ffdc4fe3cc0 sp = 0x7ffdc4fe3ca8)
+#782: cov: 2245 ft: 13060 corp: 53 exec/s 0 oom/timeout/crash: 0/4/26 time: 10295s job: 127 dft_time: 0
+[SGXSan] ERROR: Host out of bound at pc 0x7f49f46631cb write 0x1b29cf0 with 0x4 bytes (bp = 0x7fff517c9730 sp = 0x7fff517c9718)
+#789: cov: 2245 ft: 13126 corp: 55 exec/s 0 oom/timeout/crash: 0/4/27 time: 10424s job: 124 dft_time: 0
+#796: cov: 2245 ft: 13126 corp: 55 exec/s 0 oom/timeout/crash: 0/4/27 time: 10464s job: 129 dft_time: 0
+#805: cov: 2245 ft: 13126 corp: 55 exec/s 0 oom/timeout/crash: 0/4/27 time: 10563s job: 130 dft_time: 0
+[SGXSan] ERROR: Host out of bound at pc 0x7fa0de30c1cb write 0x11fd500 with 0x4 bytes (bp = 0x7ffdf63999c0 sp = 0x7ffdf63999a8)
+#812: cov: 2245 ft: 13144 corp: 56 exec/s 0 oom/timeout/crash: 0/4/28 time: 10727s job: 134 dft_time: 0
+#820: cov: 2245 ft: 13144 corp: 56 exec/s 0 oom/timeout/crash: 0/4/28 time: 10794s job: 135 dft_time: 0
+[SGXSan] ERROR: Host out of bound at pc 0x7f7f7ac411cb write 0x28f5a70 with 0x4 bytes (bp = 0x7ffd165ccd60 sp = 0x7ffd165ccd48)
+#827: cov: 2245 ft: 13144 corp: 56 exec/s 0 oom/timeout/crash: 0/4/29 time: 10960s job: 131 dft_time: 0
+#834: cov: 2245 ft: 13144 corp: 56 exec/s 0 oom/timeout/crash: 0/4/29 time: 11230s job: 137 dft_time: 0
+#841: cov: 2245 ft: 13144 corp: 56 exec/s 0 oom/timeout/crash: 0/4/29 time: 11290s job: 136 dft_time: 0
+#853: cov: 2245 ft: 13144 corp: 56 exec/s 0 oom/timeout/crash: 0/4/29 time: 11480s job: 139 dft_time: 0
+#860: cov: 6358 ft: 22045 corp: 61 exec/s 0 oom/timeout/crash: 0/4/29 time: 11526s job: 138 dft_time: 0
+#868: cov: 6358 ft: 22045 corp: 61 exec/s 0 oom/timeout/crash: 0/4/29 time: 11537s job: 141 dft_time: 0
+[SGXSan] ERROR: Host out of bound at pc 0x7f8836cc21cb write 0x23b6610 with 0x4 bytes (bp = 0x7ffe3ccce940 sp = 0x7ffe3ccce928)
+#877: cov: 6358 ft: 22045 corp: 61 exec/s 0 oom/timeout/crash: 0/4/30 time: 11665s job: 140 dft_time: 0
+[SGXSan] ERROR: Host out of bound at pc 0x7f3159b381cb write 0x1f87400 with 0x4 bytes (bp = 0x7ffd4fb22a80 sp = 0x7ffd4fb22a68)
+#884: cov: 6358 ft: 22105 corp: 62 exec/s 0 oom/timeout/crash: 0/4/31 time: 11726s job: 142 dft_time: 0
+#891: cov: 6358 ft: 22105 corp: 62 exec/s 0 oom/timeout/crash: 0/4/31 time: 11914s job: 132 dft_time: 0
+#899: cov: 6358 ft: 22105 corp: 62 exec/s 0 oom/timeout/crash: 0/4/31 time: 11916s job: 143 dft_time: 0
+#907: cov: 6358 ft: 22105 corp: 62 exec/s 0 oom/timeout/crash: 0/4/31 time: 11963s job: 144 dft_time: 0
+#917: cov: 6358 ft: 22105 corp: 62 exec/s 0 oom/timeout/crash: 0/4/31 time: 11987s job: 145 dft_time: 0
+[SGXSan] ERROR: Host out of bound at pc 0x7f706ae9e1cb write 0x12a4eb0 with 0x4 bytes (bp = 0x7fffe3d672b0 sp = 0x7fffe3d67298)
+#926: cov: 6358 ft: 22106 corp: 63 exec/s 0 oom/timeout/crash: 0/4/32 time: 12071s job: 147 dft_time: 0
+[SGXSan] ERROR: Host out of bound at pc 0x7f3b5e1f21cb write 0xd2e940 with 0x4 bytes (bp = 0x7ffc2457a360 sp = 0x7ffc2457a348)
+#934: cov: 6358 ft: 22106 corp: 63 exec/s 0 oom/timeout/crash: 0/4/33 time: 12250s job: 149 dft_time: 0
+#938: cov: 6358 ft: 22106 corp: 63 exec/s 0 oom/timeout/crash: 0/4/33 time: 12267s job: 133 dft_time: 0
+#946: cov: 6358 ft: 22106 corp: 63 exec/s 0 oom/timeout/crash: 0/5/33 time: 12390s job: 146 dft_time: 0
+#954: cov: 6358 ft: 22106 corp: 63 exec/s 0 oom/timeout/crash: 0/5/33 time: 12889s job: 151 dft_time: 0
+#969: cov: 6358 ft: 22106 corp: 63 exec/s 0 oom/timeout/crash: 0/5/33 time: 12928s job: 150 dft_time: 0
+[SGXSan] ERROR: Host out of bound at pc 0x7f0b4d9681cb write 0x1504380 with 0x4 bytes (bp = 0x7ffcb05493b0 sp = 0x7ffcb0549398)
+#977: cov: 6358 ft: 22125 corp: 66 exec/s 0 oom/timeout/crash: 0/5/34 time: 13048s job: 152 dft_time: 0
+#987: cov: 6358 ft: 22125 corp: 66 exec/s 0 oom/timeout/crash: 0/5/34 time: 13094s job: 154 dft_time: 0
+#995: cov: 6358 ft: 22223 corp: 68 exec/s 0 oom/timeout/crash: 0/5/34 time: 13313s job: 153 dft_time: 0
+#1004: cov: 6358 ft: 22223 corp: 68 exec/s 0 oom/timeout/crash: 0/5/34 time: 13410s job: 157 dft_time: 0
+[SGXSan] ERROR: Host out of bound at pc 0x7f67a77971cb write 0x1f95da0 with 0x4 bytes (bp = 0x7ffe99acbf10 sp = 0x7ffe99acbef8)
+#1012: cov: 6358 ft: 22223 corp: 68 exec/s 0 oom/timeout/crash: 0/5/35 time: 13410s job: 148 dft_time: 0
+#1020: cov: 6358 ft: 22223 corp: 68 exec/s 0 oom/timeout/crash: 0/5/35 time: 13530s job: 156 dft_time: 0
+#1028: cov: 6358 ft: 22223 corp: 68 exec/s 0 oom/timeout/crash: 0/5/35 time: 13589s job: 159 dft_time: 0
+#1056: cov: 6358 ft: 22223 corp: 68 exec/s 0 oom/timeout/crash: 0/5/35 time: 13595s job: 158 dft_time: 0
+[SGXSan] ERROR: Host out of bound at pc 0x7fc17c9a71cb write 0x250ba20 with 0x4 bytes (bp = 0x7ffffe97b900 sp = 0x7ffffe97b8e8)
+#1065: cov: 6358 ft: 22241 corp: 71 exec/s 0 oom/timeout/crash: 0/5/36 time: 13679s job: 160 dft_time: 0
+[SGXSan] ERROR: Host out of bound at pc 0x7f3e5ce261cb write 0x23784f0 with 0x4 bytes (bp = 0x7fff693c1fb0 sp = 0x7fff693c1f98)
+#1075: cov: 6358 ft: 22241 corp: 71 exec/s 0 oom/timeout/crash: 0/5/37 time: 13820s job: 162 dft_time: 0
+[SGXSan] ERROR: Host out of bound at pc 0x7f1c1d1db1cb write 0x19a9b90 with 0x4 bytes (bp = 0x7fffd1fd4f40 sp = 0x7fffd1fd4f28)
+#1083: cov: 6358 ft: 22283 corp: 72 exec/s 0 oom/timeout/crash: 0/5/38 time: 13920s job: 161 dft_time: 0
+#1091: cov: 6358 ft: 22283 corp: 72 exec/s 0 oom/timeout/crash: 0/5/38 time: 13942s job: 163 dft_time: 0
+#1099: cov: 6358 ft: 22283 corp: 72 exec/s 0 oom/timeout/crash: 0/5/38 time: 14047s job: 164 dft_time: 0
+#1107: cov: 6358 ft: 22283 corp: 72 exec/s 0 oom/timeout/crash: 0/5/38 time: 14126s job: 166 dft_time: 0
+#1115: cov: 6358 ft: 22283 corp: 72 exec/s 0 oom/timeout/crash: 0/5/38 time: 14129s job: 155 dft_time: 0
+#1125: cov: 6358 ft: 22283 corp: 72 exec/s 0 oom/timeout/crash: 0/5/38 time: 14290s job: 165 dft_time: 0
+#1133: cov: 6358 ft: 22312 corp: 74 exec/s 0 oom/timeout/crash: 0/5/38 time: 14527s job: 167 dft_time: 0
+#1158: cov: 6358 ft: 22312 corp: 74 exec/s 0 oom/timeout/crash: 0/5/38 time: 14547s job: 168 dft_time: 0
+#1166: cov: 6358 ft: 22370 corp: 76 exec/s 0 oom/timeout/crash: 0/5/38 time: 14891s job: 169 dft_time: 0
+#1174: cov: 6358 ft: 22370 corp: 76 exec/s 0 oom/timeout/crash: 0/5/38 time: 15106s job: 170 dft_time: 0
+#1182: cov: 6358 ft: 22370 corp: 76 exec/s 0 oom/timeout/crash: 0/5/38 time: 15290s job: 171 dft_time: 0
+#1191: cov: 6358 ft: 22370 corp: 76 exec/s 0 oom/timeout/crash: 0/5/38 time: 15335s job: 174 dft_time: 0
+#1231: cov: 6359 ft: 22435 corp: 77 exec/s 0 oom/timeout/crash: 0/5/38 time: 15392s job: 172 dft_time: 0
+#1241: cov: 6360 ft: 22484 corp: 80 exec/s 0 oom/timeout/crash: 0/5/38 time: 15888s job: 176 dft_time: 0
+[SGXSan] ERROR: Host out of bound at pc 0x7f1048d5f1cb write 0x186aba0 with 0x4 bytes (bp = 0x7ffd8ae980d0 sp = 0x7ffd8ae980b8)
+#1249: cov: 6360 ft: 22487 corp: 81 exec/s 0 oom/timeout/crash: 0/5/39 time: 15888s job: 173 dft_time: 0
+#1257: cov: 6360 ft: 22487 corp: 81 exec/s 0 oom/timeout/crash: 0/5/39 time: 15888s job: 175 dft_time: 0
+#1266: cov: 6360 ft: 22487 corp: 81 exec/s 0 oom/timeout/crash: 0/5/39 time: 16098s job: 178 dft_time: 0
+#1275: cov: 6360 ft: 22487 corp: 81 exec/s 0 oom/timeout/crash: 0/5/39 time: 16112s job: 177 dft_time: 0
+#1284: cov: 6360 ft: 22487 corp: 81 exec/s 0 oom/timeout/crash: 0/5/39 time: 16145s job: 179 dft_time: 0
+#1294: cov: 6360 ft: 22487 corp: 81 exec/s 1 oom/timeout/crash: 0/5/39 time: 16154s job: 183 dft_time: 0
+[SGXSan] ERROR: Host out of bound at pc 0x7fd39070d1cb write 0x1015d60 with 0x4 bytes (bp = 0x7ffe7bf551c0 sp = 0x7ffe7bf551a8)
+#1326: cov: 6360 ft: 22487 corp: 81 exec/s 0 oom/timeout/crash: 0/5/40 time: 16347s job: 181 dft_time: 0
+#1337: cov: 6361 ft: 22576 corp: 85 exec/s 0 oom/timeout/crash: 0/5/40 time: 16469s job: 184 dft_time: 0
+#1346: cov: 6361 ft: 22636 corp: 87 exec/s 0 oom/timeout/crash: 0/5/40 time: 16685s job: 182 dft_time: 0
+#1355: cov: 6361 ft: 22636 corp: 87 exec/s 0 oom/timeout/crash: 0/5/40 time: 16701s job: 180 dft_time: 0
+#1364: cov: 6361 ft: 22636 corp: 87 exec/s 0 oom/timeout/crash: 0/5/40 time: 16906s job: 186 dft_time: 0
+#1375: cov: 6361 ft: 22636 corp: 87 exec/s 0 oom/timeout/crash: 0/5/40 time: 16969s job: 189 dft_time: 0
+[SGXSan] ERROR: Host out of bound at pc 0x7f22e47b71cb write 0x1771510 with 0x4 bytes (bp = 0x7ffc5733a3d0 sp = 0x7ffc5733a3b8)
+#1384: cov: 6361 ft: 22636 corp: 87 exec/s 0 oom/timeout/crash: 0/5/41 time: 17005s job: 185 dft_time: 0
+#1400: cov: 6361 ft: 22636 corp: 87 exec/s 0 oom/timeout/crash: 0/5/41 time: 17143s job: 190 dft_time: 0
+[SGXSan] ERROR: Host out of bound at pc 0x7f2e9fd121cb write 0x29af070 with 0x4 bytes (bp = 0x7ffe768060f0 sp = 0x7ffe768060d8)
+#1410: cov: 6361 ft: 22636 corp: 87 exec/s 0 oom/timeout/crash: 0/5/42 time: 17266s job: 192 dft_time: 0
+[SGXSan] ERROR: Host out of bound at pc 0x7fca4fa671cb write 0x1f9fac0 with 0x4 bytes (bp = 0x7ffe87e0fdd0 sp = 0x7ffe87e0fdb8)
+#1434: cov: 6361 ft: 22636 corp: 87 exec/s 0 oom/timeout/crash: 0/5/43 time: 17316s job: 193 dft_time: 0
+[SGXSan] ERROR: Host out of bound at pc 0x7fa495b161cb write 0x1015360 with 0x4 bytes (bp = 0x7ffd1c842ea0 sp = 0x7ffd1c842e88)
+#1443: cov: 6361 ft: 22640 corp: 89 exec/s 0 oom/timeout/crash: 0/5/44 time: 17420s job: 188 dft_time: 0
+#1452: cov: 6361 ft: 22640 corp: 89 exec/s 0 oom/timeout/crash: 0/5/44 time: 17771s job: 195 dft_time: 0
+#1455: cov: 6361 ft: 22640 corp: 89 exec/s 0 oom/timeout/crash: 0/5/44 time: 17887s job: 187 dft_time: 0
+#1464: cov: 6361 ft: 22640 corp: 89 exec/s 0 oom/timeout/crash: 0/6/44 time: 17954s job: 191 dft_time: 0
+#1487: cov: 6361 ft: 22640 corp: 89 exec/s 0 oom/timeout/crash: 0/6/44 time: 18064s job: 198 dft_time: 0
+[SGXSan] ERROR: Host out of bound at pc 0x7f922da6b1cb write 0xc8d890 with 0x4 bytes (bp = 0x7fff4ec158f0 sp = 0x7fff4ec158d8)
+#1504: cov: 6361 ft: 22640 corp: 89 exec/s 0 oom/timeout/crash: 0/6/45 time: 18068s job: 197 dft_time: 0
+[SGXSan] ERROR: Host out of bound at pc 0x7fae6b7ca1cb write 0x1dd7320 with 0x4 bytes (bp = 0x7fff0bd0b4c0 sp = 0x7fff0bd0b4a8)
+#1513: cov: 6361 ft: 22642 corp: 90 exec/s 0 oom/timeout/crash: 0/6/46 time: 18242s job: 196 dft_time: 0
+#1522: cov: 6361 ft: 22642 corp: 90 exec/s 0 oom/timeout/crash: 0/6/46 time: 18348s job: 200 dft_time: 0
+#1532: cov: 6361 ft: 22642 corp: 90 exec/s 0 oom/timeout/crash: 0/6/46 time: 18358s job: 199 dft_time: 0
+#1534: cov: 6361 ft: 22680 corp: 91 exec/s 0 oom/timeout/crash: 0/6/46 time: 18519s job: 194 dft_time: 0
+#1543: cov: 6361 ft: 22680 corp: 91 exec/s 0 oom/timeout/crash: 0/7/46 time: 18563s job: 201 dft_time: 0
+#1553: cov: 6361 ft: 22680 corp: 91 exec/s 0 oom/timeout/crash: 0/7/46 time: 18675s job: 204 dft_time: 0
+==551695== ERROR: libFuzzer: deadly signal
+#1562: cov: 6361 ft: 22680 corp: 91 exec/s 0 oom/timeout/crash: 0/7/47 time: 18926s job: 202 dft_time: 0
+#1571: cov: 6361 ft: 22680 corp: 91 exec/s 0 oom/timeout/crash: 0/7/47 time: 19045s job: 206 dft_time: 0
+#1581: cov: 6361 ft: 22680 corp: 91 exec/s 0 oom/timeout/crash: 0/7/47 time: 19334s job: 208 dft_time: 0
+==566157== ERROR: libFuzzer: deadly signal
+#1590: cov: 6361 ft: 22680 corp: 91 exec/s 0 oom/timeout/crash: 0/7/48 time: 19510s job: 205 dft_time: 0
+#1599: cov: 6361 ft: 22680 corp: 91 exec/s 0 oom/timeout/crash: 0/7/48 time: 19657s job: 203 dft_time: 0
+#1608: cov: 6361 ft: 22680 corp: 91 exec/s 0 oom/timeout/crash: 0/7/48 time: 19790s job: 207 dft_time: 0
+#1623: cov: 6361 ft: 22680 corp: 91 exec/s 0 oom/timeout/crash: 0/7/48 time: 19895s job: 211 dft_time: 0
+#1633: cov: 6361 ft: 22680 corp: 91 exec/s 0 oom/timeout/crash: 0/7/48 time: 19905s job: 212 dft_time: 0
+[SGXSan] ERROR: Host out of bound at pc 0x7f61fc23b1cb write 0xf9a4b0 with 0x4 bytes (bp = 0x7ffd4f752640 sp = 0x7ffd4f752628)
+#1642: cov: 6361 ft: 22680 corp: 91 exec/s 0 oom/timeout/crash: 0/7/49 time: 20103s job: 209 dft_time: 0
+#1657: cov: 6361 ft: 22680 corp: 91 exec/s 0 oom/timeout/crash: 0/7/49 time: 20207s job: 213 dft_time: 0
+#1676: cov: 6361 ft: 22712 corp: 92 exec/s 0 oom/timeout/crash: 0/7/49 time: 20339s job: 216 dft_time: 0
+[SGXSan] ERROR: Host out of bound at pc 0x7f431cf791cb write 0x26bc0e0 with 0x4 bytes (bp = 0x7ffe576e6930 sp = 0x7ffe576e6918)
+#1685: cov: 6361 ft: 22730 corp: 94 exec/s 0 oom/timeout/crash: 0/7/50 time: 20361s job: 214 dft_time: 0
+#1694: cov: 6361 ft: 22730 corp: 94 exec/s 0 oom/timeout/crash: 0/7/50 time: 20370s job: 210 dft_time: 0
+#1703: cov: 6361 ft: 22730 corp: 94 exec/s 0 oom/timeout/crash: 0/7/50 time: 20472s job: 215 dft_time: 0
+#1712: cov: 6361 ft: 22730 corp: 94 exec/s 0 oom/timeout/crash: 0/7/50 time: 20694s job: 219 dft_time: 0
+#1721: cov: 6361 ft: 22730 corp: 94 exec/s 0 oom/timeout/crash: 0/7/50 time: 20839s job: 218 dft_time: 0
+#1730: cov: 6361 ft: 22730 corp: 94 exec/s 0 oom/timeout/crash: 0/7/50 time: 21133s job: 220 dft_time: 0
+#1739: cov: 6361 ft: 22730 corp: 94 exec/s 0 oom/timeout/crash: 0/7/50 time: 21143s job: 221 dft_time: 0
+#1749: cov: 6361 ft: 22730 corp: 94 exec/s 0 oom/timeout/crash: 0/7/50 time: 21242s job: 224 dft_time: 0
+[SGXSan] ERROR: Host out of bound at pc 0x7f8dd18011cb write 0x1f188f0 with 0x4 bytes (bp = 0x7fff63081460 sp = 0x7fff63081448)
+#1758: cov: 6361 ft: 22730 corp: 94 exec/s 0 oom/timeout/crash: 0/7/51 time: 21497s job: 225 dft_time: 0
+#1767: cov: 6361 ft: 22730 corp: 94 exec/s 0 oom/timeout/crash: 0/7/51 time: 21506s job: 217 dft_time: 0
+#1776: cov: 6361 ft: 22730 corp: 94 exec/s 0 oom/timeout/crash: 0/7/51 time: 21577s job: 223 dft_time: 0
+#1785: cov: 6361 ft: 22730 corp: 94 exec/s 0 oom/timeout/crash: 0/7/51 time: 21733s job: 222 dft_time: 0
+INFO: fuzzed for 21733 seconds, wrapping up soon
+INFO: exiting: 0 time: 22338s

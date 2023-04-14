@@ -1,0 +1,33 @@
+{
+    "0x7ffff77fabf2": {
+        "5830e9b7ba275ea1a777c66b27249c71f716d40e91b1ffc352286764f138ad17": {
+            "[SGXSan] ERROR: #PF Addr (nil) at pc 0x7ffff77fabf2 => Null-Pointer Dereference": {
+                "num_crashes": 1,
+                "inputs": [
+                    "crash-000db3b5056bb1f582ed921dd8ad8656654f933a"
+                ]
+            }
+        }
+    },
+    "hash2bt": {
+        "5830e9b7ba275ea1a777c66b27249c71f716d40e91b1ffc352286764f138ad17": [
+            "0x0000000000031dba: sgxsan_signal_safe_dump_bt (offset 0x31da0) at /media/leone/Data/sgx-wallet-T0-2023-02-14/sgx-wallet",
+            "0x0000000000032010: ? at /media/leone/Data/sgx-wallet-T0-2023-02-14/sgx-wallet",
+            "0x0000000000014420: ? at /lib/x86_64-linux-gnu/libpthread.so.0",
+            "0x0000000000183bf2: ? at /lib/x86_64-linux-gnu/libc.so.6",
+            "0x000000000003f132: strcmp (offset 0x3f110) at /media/leone/Data/sgx-wallet-T0-2023-02-14/sgx-wallet",
+            "0x00000000000525b2: ? at /media/leone/Data/sgx-wallet-T0-2023-02-14/enclave.signed.so",
+            "0x0000000000050af2: ? at /media/leone/Data/sgx-wallet-T0-2023-02-14/enclave.signed.so",
+            "0x0000000000038e1f: sgx_ecall_switchless (offset 0x38cc0) at /media/leone/Data/sgx-wallet-T0-2023-02-14/sgx-wallet",
+            "0x0000000000029874: ecall_change_master_password (offset 0x297d0) at /media/leone/Data/sgx-wallet-T0-2023-02-14/sgx-wallet",
+            "0x000000000004aefd: LLVMFuzzerTestOneInput (offset 0x4abb0) at /media/leone/Data/sgx-wallet-T0-2023-02-14/sgx-wallet",
+            "0x0000000000071c30: _ZN6fuzzer6Fuzzer15ExecuteCallbackEPKhm (offset 0x71b10) at /media/leone/Data/sgx-wallet-T0-2023-02-14/sgx-wallet",
+            "0x0000000000059bcd: _ZN6fuzzer10RunOneTestEPNS_6FuzzerEPKcm (offset 0x59ad0) at /media/leone/Data/sgx-wallet-T0-2023-02-14/sgx-wallet",
+            "0x0000000000060077: _ZN6fuzzer12FuzzerDriverEPiPPPcPFiPKhmE (offset 0x5da10) at /media/leone/Data/sgx-wallet-T0-2023-02-14/sgx-wallet",
+            "0x000000000003f623: main (offset 0x3f600) at /media/leone/Data/sgx-wallet-T0-2023-02-14/sgx-wallet",
+            "0x0000000000024083: __libc_start_main (offset 0x23f90) at /lib/x86_64-linux-gnu/libc.so.6",
+            "0x000000000002956e: _start (offset 0x29540) at /media/leone/Data/sgx-wallet-T0-2023-02-14/sgx-wallet",
+            ""
+        ]
+    }
+}

@@ -1,0 +1,13 @@
+13792708
+·
+34081599 Enter ecall_show_wallet
+35993032 Enter ecall_create_wallet
+41950882 Enter ecall_change_master_password
+35572360 Enter ecall_remove_item
+43625983 Enter ecall_add_item
+
+34084026 Try fuzz_ecall_show_wallet
+35993032 Try fuzz_ecall_create_wallet
+41950882 Try fuzz_ecall_change_master_password
+35572360 Try fuzz_ecall_remove_item
+43629736 Try fuzz_ecall_add_item
