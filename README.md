@@ -396,3 +396,13 @@ static int seekAndRead(...) {
 
 ## Usage of EnclaveFuzz
 EnclaveFuzz could run in any Linux-like environment without any special requirement. Developers only need to modify the build script to use the EnclaveFuzz SDK and add some compiler/linker flags.
+
+## Bugs found by EnclaveFuzz vs SGXFuzz
+
+|SGX APP|Bugs Found by EnclaveFuzz|Bugs Found by SGXFuzz|
+|--|--|--|
+|Intel SGXSSL|2 UAF + 1 0Ptr|0|
+|mbedtls-SGX|2 0Ptr + 2 UAF|1 0Ptr|
+|SGX_SQLite|1 UAF + 1 StackOverflow|0|
+|sgx-wallet|7 0Ptr + 3 HeapOverflow|1 0Ptr|
+|wolfssl|0|0|
